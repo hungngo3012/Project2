@@ -32,8 +32,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -825,7 +827,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: f8fe28d25b8dd86186aa6d1dd3f50481
+      Hash: 487e49a21b5f869014b6f825573678c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InteractNPC
@@ -909,7 +911,7 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: 4f342fd53790e876fdb4f42d5a06f160
+      Hash: d3e4118a73357fca432e7f97ad951038
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CompleteHammerQuest

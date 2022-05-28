@@ -25,6 +25,14 @@ public class CompleteHammerQuest : MonoBehaviour
     [SerializeField]
     Transform weaponK;
 
+
+    [SerializeField]
+    Transform Player;
+
+
+    [SerializeField]
+    Transform NPC;
+
     public float plusDamage = 1.0f;
 
     bool canInt = false;
@@ -55,6 +63,7 @@ public class CompleteHammerQuest : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.E)) && canInt && completeQuest)
         {
             TalkAudio.Play();
+            NPC.LookAt(Player);
             //animator.SetBool("isInteract", true);
             isInteract = true;
             CanInteract.gameObject.SetActive(false);

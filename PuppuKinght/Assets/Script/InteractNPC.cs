@@ -13,6 +13,12 @@ public class InteractNPC : MonoBehaviour
     [SerializeField]
     private AudioSource TalkAudio;
 
+    [SerializeField]
+    Transform Player;
+
+    [SerializeField]
+    Transform NPC;
+
     bool canInt = false;
     bool isInteract = false;
     //private Animator animator;
@@ -37,6 +43,7 @@ public class InteractNPC : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.E)) && canInt)
         {
             TalkAudio.Play();
+            NPC.LookAt(Player);
             //animator.SetBool("isInteract", true);
             isInteract = true;
             CanInteract.gameObject.SetActive(false);
