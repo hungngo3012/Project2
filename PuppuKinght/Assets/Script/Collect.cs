@@ -35,6 +35,15 @@ public class Collect : MonoBehaviour
         }
     }
 
+    void OnTriggerExit(Collider info)
+    {
+        if ((info.gameObject.tag == "Player") && !isInteract && isTakeQuest)
+        {
+            canInt = false;
+            CanInteract.gameObject.SetActive(false);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

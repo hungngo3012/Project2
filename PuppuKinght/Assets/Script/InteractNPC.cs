@@ -37,6 +37,15 @@ public class InteractNPC : MonoBehaviour
         }
     }
 
+    void OnTriggerExit(Collider info)
+    {
+        // Destroy everything that leaves the trigger
+        if ((info.gameObject.tag == "Player") && !isInteract)
+        {
+            canInt = false;
+            CanInteract.gameObject.SetActive(false);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -48,7 +57,8 @@ public class InteractNPC : MonoBehaviour
             isInteract = true;
             CanInteract.gameObject.SetActive(false);
             Panel.gameObject.SetActive(true);
-            StartCoroutine(Coroutine());
+            canInt = false;
+            //StartCoroutine(Coroutine());
         }
     }
 
@@ -57,7 +67,7 @@ public class InteractNPC : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         //yield return new WaitForEndOfFrame();
-        canInt = false;
+
         //Player.gameObject.GetComponent<PlayerControl>().CollectSword();
     }
 }

@@ -32,6 +32,7 @@ public class EnemyAI_Gunner : MonoBehaviour
     public float dis;
     public bool isDie;
     private bool isMove = false;
+    private bool isRest = false;
 
     //Bullet
     Rigidbody bul;
@@ -71,6 +72,8 @@ public class EnemyAI_Gunner : MonoBehaviour
 
         if (playerInSightRange && !playerInAttackRange && !isDie)
         {
+            isRest = false;
+            ani.ResetTrigger("rest");
             //ani.SetTrigger("walk");
             ChasePlayer();
             walkPointSet = true;
@@ -79,6 +82,8 @@ public class EnemyAI_Gunner : MonoBehaviour
 
         if (playerInSightRange && playerInAttackRange && !isDie)
         {
+            isRest = false;
+            ani.ResetTrigger("rest");
             //ani.ResetTrigger("walk");
             //ani.SetTrigger("attack");
             AttackPlayer();
@@ -105,7 +110,6 @@ public class EnemyAI_Gunner : MonoBehaviour
     {
         if (walkPointSet == false)
         {
-            ani.SetTrigger("rest");
             SearchWalkPoint();
         }
         if (walkPointSet == true)
@@ -116,6 +120,11 @@ public class EnemyAI_Gunner : MonoBehaviour
             //transform.LookAt(walkPoint);
 
         }
+        if ((walkPointSet == true) && !isRest)
+        {
+            ani.SetTrigger("walk");
+        }
+
         dis = Vector3.Distance(agent.transform.position, walkPoint);
         if (dis < 8f)
         {
@@ -150,6 +159,8 @@ public class EnemyAI_Gunner : MonoBehaviour
 
         if (changeDirect && (isPatrol == 0))
         {
+            ani.SetTrigger("rest");
+            isRest = true;
             isMove = false;
         }
         /*else
@@ -170,6 +181,7 @@ public class EnemyAI_Gunner : MonoBehaviour
     }
     private void ChasePlayer()
     {
+        ani.SetTrigger("walk");
         agent.SetDestination(player.position);
         transform.LookAt(player);
         isMove = true;

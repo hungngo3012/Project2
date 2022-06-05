@@ -55,6 +55,15 @@ public class CompleteHammerQuest : MonoBehaviour
         }
     }
 
+    void OnTriggerExit(Collider info)
+    {
+        if ((info.gameObject.tag == "Player") && !isInteract && completeQuest)
+        {
+            canInt = false;
+            CanInteract.gameObject.SetActive(false);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {

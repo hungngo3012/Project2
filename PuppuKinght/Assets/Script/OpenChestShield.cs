@@ -25,12 +25,22 @@ public class OpenChestShield : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void OnCollisionEnter(Collision info)
+    void OnTriggerEnter(Collider info)
     {
         if ((info.gameObject.tag == "Player") && !isOpen)
         {
             canOpen = true;
             CanInteract.gameObject.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit(Collider info)
+    {
+        // Destroy everything that leaves the trigger
+        if ((info.gameObject.tag == "Player") && !isOpen)
+        {
+            canOpen = false;
+            CanInteract.gameObject.SetActive(false);
         }
     }
 
@@ -43,6 +53,7 @@ public class OpenChestShield : MonoBehaviour
             animator.SetBool("isOpen", true);
             isOpen = true;
             CanInteract.gameObject.SetActive(false);
+            canOpen = false;
             StartCoroutine(Coroutine());
         }
     }
@@ -50,8 +61,6 @@ public class OpenChestShield : MonoBehaviour
     IEnumerator Coroutine()
     {
         yield return new WaitForSeconds(2);
-
-        canOpen = false;
         Panel.gameObject.SetActive(true);
 
         //yield return new WaitForEndOfFrame();

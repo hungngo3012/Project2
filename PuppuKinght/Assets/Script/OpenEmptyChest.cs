@@ -22,12 +22,22 @@ public class OpenEmptyChest : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void OnCollisionEnter(Collision info)
+    void OnTriggerEnter(Collider info)
     {
         if ((info.gameObject.tag == "Player") && !isOpen)
         {
             canOpen = true;
             CanInteract.gameObject.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit(Collider info)
+    {
+        // Destroy everything that leaves the trigger
+        if ((info.gameObject.tag == "Player") && !isOpen)
+        {
+            canOpen = false;
+            CanInteract.gameObject.SetActive(false);
         }
     }
 
