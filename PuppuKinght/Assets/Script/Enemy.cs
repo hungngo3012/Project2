@@ -14,10 +14,14 @@ public class Enemy : MonoBehaviour
     public float maxHP = 10.0f;
 
     private bool isDie = false;
+    public bool isKnock = false;
     private Animator animator;
+
+    Collider m_ObjectCollider;
     // Start is called before the first frame update
     void Start()
     {
+        m_ObjectCollider = GetComponent<Collider>();
         animator = GetComponent<Animator>();
     }
 
@@ -52,7 +56,9 @@ public class Enemy : MonoBehaviour
         if (mod < 0f)
         {
             animator.SetTrigger("getHits");
+            isKnock = true;
             EnemyGetHitAudio.Play();
+            Invoke(nameof(SetKnockStatus), 2.0f);
         }
 
         hp = hp + mod;
@@ -66,6 +72,7 @@ public class Enemy : MonoBehaviour
         {
             Gift.position = transform.position;
             Gift.gameObject.SetActive(true);
+            m_ObjectCollider.isTrigger = true;
             animator.SetTrigger("die");
             isDie = true;
         }
@@ -74,5 +81,22 @@ public class Enemy : MonoBehaviour
     public bool GetDieStatus()
     {
         return isDie;
+    }
+    public bool GetKnockStatus()
+    {
+        return isKnock;
+    }
+    public void SetKnockStatus()
+    {
+        isKnock = false;
+    }
+
+    public float GetHp()
+    {
+        return hp;
+    }
+    public float GetMaxHp()
+    {
+        return maxHP;
     }
 }

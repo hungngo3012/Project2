@@ -15,7 +15,6 @@ public class EnemyAI_Simple : MonoBehaviour
 
     //Patrolling
     public Vector3 walkPoint;
-    public int ChangeWalkPointTime;
     bool walkPointSet;
     public float walkPointRange;
     private bool changeDirect;
@@ -196,10 +195,12 @@ public class EnemyAI_Simple : MonoBehaviour
         changeDirect = value;
     }
 
+    /*
     IEnumerator Coroutine()
     {
         yield return new WaitForSeconds(ChangeWalkPointTime);
         //ani.SetBool("walk", false);
     }
+    */
 }
 

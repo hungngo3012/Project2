@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - ActiveCollider
     - ActiveTrigger
     - Attack
+    - BossActive
     - Bullet
     - Camera
     - ChangeCheckPoint
@@ -14,8 +15,10 @@ ScriptsOnlyBuild:
     - Enemy
     - EnemyAI_Gunner
     - EnemyAI_Simple
+    - EnemyDamage
     - EnemyZone
     - ExploAttack
+    - GruAI
     - HealthBall
     - InteractNPC
     - LowPolyWater.LowPolyWater
@@ -138,47 +141,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4140}
     - Class: 114
-      Script: {instanceID: 4286}
+      Script: {instanceID: 4280}
     - Class: 114
-      Script: {instanceID: 4360}
+      Script: {instanceID: 4288}
     - Class: 114
-      Script: {instanceID: 4610}
+      Script: {instanceID: 4362}
     - Class: 114
-      Script: {instanceID: 4688}
+      Script: {instanceID: 4612}
     - Class: 114
-      Script: {instanceID: 5004}
+      Script: {instanceID: 4690}
     - Class: 114
-      Script: {instanceID: 5022}
+      Script: {instanceID: 5006}
     - Class: 114
-      Script: {instanceID: 5290}
+      Script: {instanceID: 5024}
     - Class: 114
-      Script: {instanceID: 5418}
+      Script: {instanceID: 5292}
     - Class: 114
-      Script: {instanceID: 5440}
+      Script: {instanceID: 5420}
     - Class: 114
-      Script: {instanceID: 5458}
+      Script: {instanceID: 5442}
     - Class: 114
-      Script: {instanceID: 5738}
+      Script: {instanceID: 5460}
     - Class: 114
-      Script: {instanceID: 5880}
+      Script: {instanceID: 5740}
     - Class: 114
-      Script: {instanceID: 5984}
+      Script: {instanceID: 5882}
     - Class: 114
-      Script: {instanceID: 6166}
+      Script: {instanceID: 5986}
     - Class: 114
-      Script: {instanceID: 6176}
+      Script: {instanceID: 6168}
     - Class: 114
-      Script: {instanceID: 6320}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6454}
+      Script: {instanceID: 6322}
     - Class: 114
-      Script: {instanceID: 6500}
+      Script: {instanceID: 6456}
     - Class: 114
-      Script: {instanceID: 6704}
+      Script: {instanceID: 6502}
     - Class: 114
-      Script: {instanceID: 7062}
+      Script: {instanceID: 6706}
     - Class: 114
-      Script: {instanceID: 7868}
+      Script: {instanceID: 7064}
+    - Class: 114
+      Script: {instanceID: 7870}
+    - Class: 114
+      Script: {instanceID: 8756}
+    - Class: 114
+      Script: {instanceID: 8808}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -332,7 +341,7 @@ ScriptsOnlyBuild:
     className: UnityOnJointBreakMessageListener
   - hash:
       serializedVersion: 2
-      Hash: cc90c9342fec36cd57629beeb75b7cb9
+      Hash: 285f3fcdf353c3d07ef468dbe29d22a9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyAI_Simple
@@ -620,7 +629,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b946d54d3330ee5fbd1e2d32ac1df4df
+      Hash: 3103948f4033017b7bc8f6621a3f67ff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -630,6 +639,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: be7c58ece932a007a8001107d96fa9b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyDamage
   - hash:
       serializedVersion: 2
       Hash: c8eb73db541c8e158f3a8654011eb7c5
@@ -1226,10 +1241,16 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 8e84404f2586faf36b8b13506ba3b01f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GruAI
+  - hash:
+      serializedVersion: 2
+      Hash: 00cc9232f1ef21c78e2f543d484b0f0f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BossActive
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
