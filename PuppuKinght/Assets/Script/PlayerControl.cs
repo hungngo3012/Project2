@@ -68,6 +68,12 @@ public class PlayerControl : MonoBehaviour
     MeshRenderer bulMesh;
     Collider bulCol;
 
+    //Main quest
+    private bool isCollectLife;
+    private bool isCollectPower;
+    private bool isCollectSoul;
+    private bool isCollectWisdom;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -258,7 +264,11 @@ public class PlayerControl : MonoBehaviour
 
         if (hp < 100)
         {
-            hp = hp + 0.001f;           
+            hp = hp + 0.001f;
+            if (isCollectLife)
+            {
+                hp = hp + 0.001f;
+            }
         }
 
         staminaBar.SetHealth(stamina);
@@ -334,5 +344,26 @@ public class PlayerControl : MonoBehaviour
     public void CollectBomb()
     {
         isCollectBomb = true;
+    }
+
+    //Collect and set Pieces of Energy
+    public void CollectLife(bool value)
+    {
+        isCollectLife = value;
+    }
+
+    public void CollectPower(bool value)
+    {
+        isCollectPower = value;
+    }
+
+    public void CollectSoul(bool value)
+    {
+        isCollectSoul = value;
+    }
+
+    public void CollectWisdom(bool value)
+    {
+        isCollectWisdom = value;
     }
 }
