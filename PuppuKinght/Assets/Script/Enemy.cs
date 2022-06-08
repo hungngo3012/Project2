@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
     public bool isKnock = false;
     private Animator animator;
 
+    public AudioSource[] DieVoice;
+
     Collider m_ObjectCollider;
     // Start is called before the first frame update
     void Start()
@@ -70,6 +72,10 @@ public class Enemy : MonoBehaviour
 
         if (hp <= 0f)
         {
+            if(DieVoice.Length == 1)
+            {
+                DieVoice[0].Play();
+            }
             Gift.position = transform.position;
             Gift.gameObject.SetActive(true);
             m_ObjectCollider.isTrigger = true;
