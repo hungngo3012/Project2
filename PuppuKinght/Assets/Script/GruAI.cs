@@ -122,7 +122,6 @@ public class GruAI : MonoBehaviour
             BossHP.gameObject.SetActive(false);
             Invoke(nameof(Die), 3.0f);
         }
-
     }
 
     private void Die()
