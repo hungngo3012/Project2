@@ -29,6 +29,7 @@ ScriptsOnlyBuild:
     - OpenChestShield
     - OpenEmptyChest
     - OpenPanel
+    - PauseMenu
     - PlayerControl
     - Rotate
     - Shield
@@ -86,6 +87,24 @@ ScriptsOnlyBuild:
     methodName: LoadGame
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
+    methodName: Setting
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: OpenQuest
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: LoadMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: OpenMap
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Resume
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: OpenPack
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
     methodName: Setting
   sceneClasses:
     Assets/Scenes/MainMenu.unity:
@@ -233,6 +252,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3172}
     - Class: 114
+      Script: {instanceID: 3290}
+    - Class: 114
       Script: {instanceID: 3486}
     - Class: 114
       Script: {instanceID: 3594}
@@ -290,6 +311,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8768}
     - Class: 114
       Script: {instanceID: 8820}
+    - Class: 114
+      Script: {instanceID: 74800}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1383,6 +1406,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 2e6080be642f0d64dd283e55999c40a2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
