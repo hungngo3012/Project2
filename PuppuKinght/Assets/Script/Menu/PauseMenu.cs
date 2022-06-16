@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
+    public AudioMixer audioMixer;
+
     public static bool GameisPause = false;
 
     public GameObject PauseMenuUI;
@@ -15,6 +18,15 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject Quest;
 
+    public GameObject SettingPanel;
+
+    public Light GameLight;
+
+
+    void Start()
+    {
+
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,6 +42,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        SettingPanel.SetActive(false);
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameisPause = false;
@@ -44,11 +57,35 @@ public class PauseMenu : MonoBehaviour
 
     public void Setting()
     {
+        SettingPanel.SetActive(true);
+    }
 
+    public void SetMusic(float vol)
+    {
+        audioMixer.SetFloat("Music", -vol*80.0f);
+    }
+
+    public void SetSound(float vol)
+    {
+        audioMixer.SetFloat("SFX", -vol * 80.0f);
+    }
+
+    public void SetLight(float val)
+    {
+        if(val < 0.9f)
+        {
+            GameLight.intensity = 1.0f - 1.0f * Mathf.Sin(0.5f * Mathf.PI * val);
+        }    
+    }
+
+    public void CloseSetting()
+    {
+        SettingPanel.SetActive(false);
     }
 
     public void LoadMenu()
     {
+        SettingPanel.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }

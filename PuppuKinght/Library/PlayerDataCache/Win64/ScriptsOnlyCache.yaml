@@ -59,6 +59,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Outline
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   serializedClasses:
@@ -73,6 +74,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
@@ -93,6 +95,12 @@ ScriptsOnlyBuild:
     methodName: OpenQuest
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
+    methodName: SetMusic
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: SetLight
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
     methodName: LoadMenu
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
@@ -100,6 +108,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: Resume
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: CloseSetting
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: SetSound
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: OpenPack
@@ -155,15 +169,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 6176}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6714}
+      Script: {instanceID: 6716}
     - Class: 114
-      Script: {instanceID: 6758}
+      Script: {instanceID: 6760}
     - Class: 114
-      Script: {instanceID: 7112}
+      Script: {instanceID: 7114}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -215,6 +229,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -250,69 +266,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3048}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3290}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 3594}
+      Script: {instanceID: 3488}
     - Class: 114
-      Script: {instanceID: 4146}
+      Script: {instanceID: 3596}
     - Class: 114
-      Script: {instanceID: 4286}
+      Script: {instanceID: 4148}
     - Class: 114
-      Script: {instanceID: 4294}
+      Script: {instanceID: 4288}
     - Class: 114
-      Script: {instanceID: 4368}
+      Script: {instanceID: 4296}
     - Class: 114
-      Script: {instanceID: 4618}
+      Script: {instanceID: 4370}
     - Class: 114
-      Script: {instanceID: 4696}
+      Script: {instanceID: 4620}
     - Class: 114
-      Script: {instanceID: 5012}
+      Script: {instanceID: 4698}
     - Class: 114
-      Script: {instanceID: 5030}
+      Script: {instanceID: 5014}
     - Class: 114
-      Script: {instanceID: 5182}
+      Script: {instanceID: 5032}
     - Class: 114
-      Script: {instanceID: 5300}
+      Script: {instanceID: 5184}
     - Class: 114
-      Script: {instanceID: 5428}
+      Script: {instanceID: 5302}
     - Class: 114
-      Script: {instanceID: 5450}
+      Script: {instanceID: 5430}
     - Class: 114
-      Script: {instanceID: 5468}
+      Script: {instanceID: 5452}
     - Class: 114
-      Script: {instanceID: 5748}
+      Script: {instanceID: 5470}
     - Class: 114
-      Script: {instanceID: 5890}
+      Script: {instanceID: 5750}
     - Class: 114
-      Script: {instanceID: 5994}
+      Script: {instanceID: 5892}
     - Class: 114
-      Script: {instanceID: 6176}
+      Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 6186}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6330}
+      Script: {instanceID: 6188}
     - Class: 114
-      Script: {instanceID: 6464}
+      Script: {instanceID: 6332}
     - Class: 114
-      Script: {instanceID: 6510}
+      Script: {instanceID: 6466}
     - Class: 114
-      Script: {instanceID: 6714}
+      Script: {instanceID: 6512}
     - Class: 114
-      Script: {instanceID: 7074}
+      Script: {instanceID: 6716}
     - Class: 114
-      Script: {instanceID: 7742}
+      Script: {instanceID: 6726}
     - Class: 114
-      Script: {instanceID: 7882}
+      Script: {instanceID: 7076}
     - Class: 114
-      Script: {instanceID: 8768}
+      Script: {instanceID: 7744}
     - Class: 114
-      Script: {instanceID: 8820}
+      Script: {instanceID: 7884}
     - Class: 114
-      Script: {instanceID: 74800}
+      Script: {instanceID: 8770}
+    - Class: 114
+      Script: {instanceID: 8822}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -333,6 +351,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 199
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -342,6 +362,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 238
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -608,6 +634,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: ce8109d1b3e4e785da2b08ff14cb668e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1406,12 +1438,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 2e6080be642f0d64dd283e55999c40a2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PauseMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
