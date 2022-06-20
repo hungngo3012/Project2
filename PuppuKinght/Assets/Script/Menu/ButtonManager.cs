@@ -28,9 +28,14 @@ public class ButtonManager : MonoBehaviour
 
     }
 
-    public void Setting()
+    public void Open(GameObject panel)
     {
+        panel.SetActive(true);
+    }
 
+    public void Close(GameObject panel)
+    {
+        panel.SetActive(false);
     }
 
     public void QuitGame()

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ActiveCollider
+    - ActiveMiniMap
     - ActiveTrigger
     - Attack
     - BossActive
@@ -41,8 +42,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -87,7 +90,7 @@ ScriptsOnlyBuild:
     methodName: LoadGame
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
-    methodName: Setting
+    methodName: Open
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: OpenQuest
@@ -322,13 +325,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7076}
     - Class: 114
-      Script: {instanceID: 7744}
+      Script: {instanceID: 7734}
     - Class: 114
-      Script: {instanceID: 7884}
+      Script: {instanceID: 7746}
     - Class: 114
-      Script: {instanceID: 8770}
+      Script: {instanceID: 7886}
     - Class: 114
-      Script: {instanceID: 8822}
+      Script: {instanceID: 8772}
+    - Class: 114
+      Script: {instanceID: 8824}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1322,6 +1327,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 0a73329af92e7f38e74d802f4834da64
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActiveMiniMap
   - hash:
       serializedVersion: 2
       Hash: e0ec0c2a8e8d0008c8a61ab0c7a28df7
