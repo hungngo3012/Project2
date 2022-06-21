@@ -24,6 +24,8 @@ ScriptsOnlyBuild:
     - GruAI
     - HealthBall
     - InteractNPC
+    - Inventory
+    - Item
     - LowPolyWater.LowPolyWater
     - NextPanel
     - OpenChest
@@ -56,18 +58,24 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.Outline
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.RectOffset
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -75,13 +83,26 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
     methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
     methodName: NewGame
@@ -90,7 +111,28 @@ ScriptsOnlyBuild:
     methodName: LoadGame
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
     methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Close
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: OpenQuest
@@ -115,6 +157,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: SetSound
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Open
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: OpenPack
@@ -165,6 +210,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1574}
     - Class: 114
       Script: {instanceID: 1620}
+    - Class: 114
+      Script: {instanceID: 2420}
     - Class: 114
       Script: {instanceID: 2738}
     - Class: 114
@@ -273,11 +320,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3292}
     - Class: 114
+      Script: {instanceID: 3486}
+    - Class: 114
       Script: {instanceID: 3488}
     - Class: 114
       Script: {instanceID: 3596}
     - Class: 114
       Script: {instanceID: 4148}
+    - Class: 114
+      Script: {instanceID: 4172}
     - Class: 114
       Script: {instanceID: 4288}
     - Class: 114
@@ -292,6 +343,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5014}
     - Class: 114
       Script: {instanceID: 5032}
+    - Class: 114
+      Script: {instanceID: 5148}
     - Class: 114
       Script: {instanceID: 5184}
     - Class: 114
@@ -325,15 +378,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7076}
     - Class: 114
+      Script: {instanceID: 7114}
+    - Class: 114
+      Script: {instanceID: 7212}
+    - Class: 114
       Script: {instanceID: 7734}
     - Class: 114
       Script: {instanceID: 7746}
     - Class: 114
       Script: {instanceID: 7886}
     - Class: 114
+      Script: {instanceID: 7982}
+    - Class: 114
       Script: {instanceID: 8772}
     - Class: 114
       Script: {instanceID: 8824}
+    - Class: 114
+      Script: {instanceID: 274418}
+    - Class: 114
+      Script: {instanceID: 297988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -423,7 +486,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 845ccb79de11bc924a552e23b669c278
+      Hash: 94fcd158a23b1402010fafaf8881c6eb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Collect
@@ -615,7 +678,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: e49c40a032347527ccede81e442d39da
+      Hash: 2b796bd25397cd86c8f9919d2070ffbb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Gem
@@ -639,7 +702,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: ce8109d1b3e4e785da2b08ff14cb668e
+      Hash: 3ac3331cdd5533b5ac8187aa1e46500f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu
@@ -1107,7 +1170,7 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: d3e4118a73357fca432e7f97ad951038
+      Hash: 6cc558859a0a20af93e669105705111c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CompleteHammerQuest
@@ -1447,6 +1510,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4e5a442b5dc2e05db1e48cb7bbeba514
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Item
+  - hash:
+      serializedVersion: 2
+      Hash: 2d068bcfd7de03835480b25d20f36955
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Inventory
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

@@ -33,6 +33,10 @@ public class CompleteHammerQuest : MonoBehaviour
     [SerializeField]
     Transform NPC;
 
+    public Item[] item;
+
+    public int NumberItemsNeed;
+
     public float plusDamage = 1.0f;
 
     bool canInt = false;
@@ -69,6 +73,7 @@ public class CompleteHammerQuest : MonoBehaviour
     {
         int j = 0;
         int i = 0;
+        int k = 0;
         if ((Input.GetKeyDown(KeyCode.E)) && canInt && completeQuest)
         {
             TalkAudio.Play();
@@ -78,6 +83,13 @@ public class CompleteHammerQuest : MonoBehaviour
             CanInteract.gameObject.SetActive(false);
             Panel.gameObject.SetActive(true);
             CheckPanelParent.gameObject.SetActive(false);
+
+            while(k < NumberItemsNeed)
+            {
+                item[k].Delete();
+                k++;
+            }
+
             if (!isPlus)
             {
                 weaponJ.gameObject.GetComponent<Attack>().UpdateDamage(plusDamage);

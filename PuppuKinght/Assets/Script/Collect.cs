@@ -16,6 +16,8 @@ public class Collect : MonoBehaviour
     [SerializeField]
     private AudioSource CollectAudio;
 
+    public Item item;
+
     bool canInt = false;
     bool isInteract = false;
     bool isTakeQuest = false;
@@ -55,6 +57,7 @@ public class Collect : MonoBehaviour
             isInteract = true;
             CanInteract.gameObject.SetActive(false);
             Panel.gameObject.SetActive(true);
+            item.Add();
             StartCoroutine(Coroutine());
         }
     }

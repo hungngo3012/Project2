@@ -6,6 +6,8 @@ using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
+    public Inventory inventory;
+
     public AudioMixer audioMixer;
 
     public static bool GameisPause = false;
@@ -23,10 +25,12 @@ public class PauseMenu : MonoBehaviour
     public Light GameLight;
 
 
+
     void Start()
     {
-
+        inventory.SetDeleteId(10);
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -109,5 +113,15 @@ public class PauseMenu : MonoBehaviour
         Map.SetActive(false);
         Pack.SetActive(false);
         Quest.SetActive(true);
+    }
+
+    public void Open(GameObject panel)
+    {
+        panel.SetActive(true);
+    }
+
+    public void Close(GameObject panel)
+    {
+        panel.SetActive(false);
     }
 }

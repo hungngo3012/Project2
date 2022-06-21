@@ -8,6 +8,9 @@ public class Gem : MonoBehaviour
     Transform Panel;
 
     [SerializeField]
+    Transform QuestPanel;
+
+    [SerializeField]
     Transform CollectPanel;
 
     [SerializeField]
@@ -57,6 +60,7 @@ public class Gem : MonoBehaviour
             isInteract = true;
             CanInteract.gameObject.SetActive(false);
             Panel.gameObject.SetActive(true);
+            QuestPanel.gameObject.SetActive(true);
             CollectPanel.gameObject.SetActive(true);
             canInt = false;
             if(typeGem == 0)
