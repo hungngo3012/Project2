@@ -33,20 +33,20 @@ public class CompleteHammerQuest : MonoBehaviour
     [SerializeField]
     Transform NPC;
 
-    public Item[] item;
-
-    public int NumberItemsNeed;
+    public GameObject[] item;
 
     public float plusDamage = 1.0f;
 
     bool canInt = false;
     bool isInteract = false;
     bool completeQuest = false;
+    bool clearPack;
     bool isPlus = false;
     //private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        clearPack = false;
         //animator = GetComponent<Animator>();
     }
 
@@ -81,14 +81,24 @@ public class CompleteHammerQuest : MonoBehaviour
             //animator.SetBool("isInteract", true);
             isInteract = true;
             CanInteract.gameObject.SetActive(false);
-            Panel.gameObject.SetActive(true);
-            CheckPanelParent.gameObject.SetActive(false);
 
-            while(k < NumberItemsNeed)
+            Panel.gameObject.SetActive(true);
+
+            while (k < item.Length)
             {
-                item[k].Delete();
+                if (item[k].gameObject.activeSelf && !clearPack)
+                {
+                    item[k].GetComponent<Item>().Delete();
+                }
                 k++;
             }
+
+            if(k == item.Length)
+            {
+                clearPack = true;
+            }
+
+            CheckPanelParent.gameObject.SetActive(false);
 
             if (!isPlus)
             {

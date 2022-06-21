@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
-    public Inventory inventory;
+    //public Inventory inventory;
 
     public AudioMixer audioMixer;
 
@@ -28,7 +28,7 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        inventory.SetDeleteId(10);
+        //inventory.SetDeleteId(10);
     }
 
     // Update is called once per frame

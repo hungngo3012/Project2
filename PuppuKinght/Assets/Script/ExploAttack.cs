@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ExploAttack : MonoBehaviour
 {
     public float damage = 20.0f;
+    public Text damageText;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,6 @@ public class ExploAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        damageText.text = damage.ToString();
     }
 }

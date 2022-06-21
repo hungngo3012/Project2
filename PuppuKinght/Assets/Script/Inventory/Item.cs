@@ -28,10 +28,17 @@ public class Item : MonoBehaviour
 
     public void Add()
     {
-        pos = inventory.next;
-        transform.gameObject.SetActive(true);
-        transform.position = Slot[pos].position;
-        inventory.Add();
+        if(inventory.next <= 8)
+        {
+            pos = inventory.next;
+            transform.gameObject.SetActive(true);
+            transform.position = Slot[pos].position;
+            inventory.Add();
+        }
+        else
+        {
+            //Thong bao tui day
+        }
     }
 
     public void Delete()

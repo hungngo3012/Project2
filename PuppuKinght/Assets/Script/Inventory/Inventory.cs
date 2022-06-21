@@ -16,11 +16,12 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Add()
     {
+        deleteId = 9;
         next = next + 1;
     }
 

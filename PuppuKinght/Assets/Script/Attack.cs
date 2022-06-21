@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Attack : MonoBehaviour
 {
     public float damage = 5.0f;
+    public Text damageText;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        damageText.text = damage.ToString();
     }
 
     public void UpdateDamage(float mod)
