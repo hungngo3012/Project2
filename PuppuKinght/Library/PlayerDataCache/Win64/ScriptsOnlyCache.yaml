@@ -44,10 +44,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -180,6 +178,15 @@ ScriptsOnlyBuild:
     methodName: Resume
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
     methodName: CloseSetting
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
@@ -187,6 +194,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Close
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: OpenPack
@@ -939,7 +955,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: af6cc0fdafae7cbd8e6085f5adf7900d
+      Hash: 98ae5e0dc08468de19e1ef47d0d7b510
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerControl
@@ -981,7 +997,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 1706df7638c3ecf9d3ab0f7cf5ec8cf9
+      Hash: d580982f7a846d1c870e8e15a9e1e38e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ExploAttack

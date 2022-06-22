@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ExploAttack : MonoBehaviour
 {
     public float damage = 20.0f;
-    public Text damageText;
+    public Text[] damageText;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,9 @@ public class ExploAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        damageText.text = damage.ToString();
+        if(damageText.Length > 0)
+        {
+            damageText[0].text = damage.ToString();
+        }
     }
 }
