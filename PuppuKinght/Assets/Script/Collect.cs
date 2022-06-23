@@ -11,7 +11,7 @@ public class Collect : MonoBehaviour
     Transform CanInteract;
 
     [SerializeField]
-    Transform TakeQuestPanel;
+    Transform TakeQuestNPC;
 
     [SerializeField]
     private AudioSource CollectAudio;
@@ -49,7 +49,7 @@ public class Collect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isTakeQuest = TakeQuestPanel.gameObject.GetComponent<ClosePanel>().isClosePanel();
+        isTakeQuest = TakeQuestNPC.gameObject.GetComponent<InteractNPC>().isInteract;
         if ((Input.GetKeyDown(KeyCode.E)) && canInt && isTakeQuest)
         {
             CollectAudio.Play();

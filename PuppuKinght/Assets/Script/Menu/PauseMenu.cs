@@ -24,6 +24,8 @@ public class PauseMenu : MonoBehaviour
 
     public Light GameLight;
 
+    public GameObject Player;
+
 
 
     void Start()
@@ -92,6 +94,11 @@ public class PauseMenu : MonoBehaviour
         SettingPanel.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
+    }
+
+    public void Save()
+    {
+        Player.GetComponent<PlayerControl>().SavePlayer();
     }
 
     public void OpenMap()

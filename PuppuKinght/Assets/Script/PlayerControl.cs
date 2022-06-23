@@ -74,6 +74,8 @@ public class PlayerControl : MonoBehaviour
     public bool isCollectSoul;
     public bool isCollectWisdom;
 
+    public Transform CollectLifePanel;
+
     //Slope Handle
     [Header("Slope Handling")]
     public float maxSlopeAngle;
@@ -81,6 +83,11 @@ public class PlayerControl : MonoBehaviour
     private bool exitingSlope;
     public float playerHeight;
     Vector3 movementDirection;
+
+    //NPC
+    public bool[] isInteractNPC;
+    public InteractNPC[] npc;
+    public bool isBackHammerQuest;
 
     void Start()
     {
@@ -277,6 +284,10 @@ public class PlayerControl : MonoBehaviour
             //staminaBar.SetHealth(stamina);
         }
 
+        if(isCollectLife && CollectLifePanel.gameObject.activeSelf)
+        {
+            CollectLifePanel.gameObject.SetActive(true);
+        }
 
         if (stamina < 100)
         {
@@ -424,6 +435,63 @@ public class PlayerControl : MonoBehaviour
         loadPosition.z = data.position[2];
 
         transform.position = loadPosition;
+
+        if (data.isInteractNPC[0] == 1)
+        {
+            npc[0].isInteract = true;
+        }
+
+        if (data.isInteractNPC[1] == 1)
+        {
+            npc[1].isInteract = true;
+        }
+
+        if (data.isInteractNPC[2] == 1)
+        {
+            npc[2].isInteract = true;
+        }
+
+        if (data.isInteractNPC[3] == 1)
+        {
+            npc[3].isInteract = true;
+        }
+
+        //Load main quest status
+        if (data.isCollectLife == 1)
+        {
+            isCollectLife = true;
+        }
+        if (data.isCollectPower == 1)
+        {
+            isCollectPower = true;
+        }
+        if (data.isCollectSoul == 1)
+        {
+            isCollectSoul = true;
+        }
+        if (data.isCollectWisdom == 1)
+        {
+            isCollectWisdom = true;
+        }
+
+        //
+        if(data.isBackHammerQuest == 1)
+        {
+            isBackHammerQuest = true;
+        }
+    }
+
+    public void NpcHandle()
+    {
+        isInteractNPC[0] = npc[0].isInteract;
+        isInteractNPC[1] = npc[1].isInteract;
+        isInteractNPC[2] = npc[2].isInteract;
+        isInteractNPC[3] = npc[3].isInteract;
+    }
+
+    public void SetHammerQuestStatus(bool val)
+    {
+        isBackHammerQuest = val;
     }
 
     private bool OnSlope()
