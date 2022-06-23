@@ -58,9 +58,9 @@ public class PlayerControl : MonoBehaviour
     private Animator animator;
 
     //Collect
-    private bool isCollectSword = false;
-    private bool isCollectShield = false;
-    private bool isCollectBomb = false;
+    public bool isCollectSword = false;
+    public bool isCollectShield = false;
+    public bool isCollectBomb = false;
 
     //temp
     Rigidbody rb;
@@ -69,10 +69,10 @@ public class PlayerControl : MonoBehaviour
     Collider bulCol;
 
     //Main quest
-    private bool isCollectLife;
-    private bool isCollectPower;
-    private bool isCollectSoul;
-    private bool isCollectWisdom;
+    public bool isCollectLife;
+    public bool isCollectPower;
+    public bool isCollectSoul;
+    public bool isCollectWisdom;
 
     //Slope Handle
     [Header("Slope Handling")]
@@ -386,6 +386,44 @@ public class PlayerControl : MonoBehaviour
     public void CollectWisdom(bool value)
     {
         isCollectWisdom = value;
+    }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        //Load player status
+        hp = data.health;
+        stamina = data.stamina;
+
+        //Load Collect Weapon status
+        if(data.isCollectSword == 1)
+        {
+            CollectSword();
+        }
+
+        if (data.isCollectShield == 1)
+        {
+            CollectShield();
+        }
+
+        if (data.isCollectBomb == 1)
+        {
+            CollectBomb();
+        }
+
+        //Load position
+        Vector3 loadPosition;
+        loadPosition.x = data.position[0];
+        loadPosition.y = data.position[1];
+        loadPosition.z = data.position[2];
+
+        transform.position = loadPosition;
     }
 
     private bool OnSlope()

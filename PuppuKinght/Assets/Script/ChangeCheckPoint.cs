@@ -18,7 +18,9 @@ public class ChangeCheckPoint : MonoBehaviour
         if (info.gameObject.tag == "Player")
         {
             checkPoint.position = transform.position;
-            //canDamage = 0f;       
+            //canDamage = 0f;
+
+            info.gameObject.GetComponent<PlayerControl>().SavePlayer();
         }
     }
 

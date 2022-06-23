@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - Collect
     - CollectBomb
     - CompleteHammerQuest
+    - ContinueSystem
     - Enemy
     - EnemyAI_Gunner
     - EnemyAI_Simple
@@ -44,8 +45,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -269,6 +272,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6764}
     - Class: 114
       Script: {instanceID: 7118}
+    - Class: 114
+      Script: {instanceID: 418650}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -955,7 +960,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 98ae5e0dc08468de19e1ef47d0d7b510
+      Hash: 1f6b68c649b0897f1b050f2dc75d716c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerControl
@@ -1315,7 +1320,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6681a61d42755818c8d70db7ac32ced5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ButtonManager
@@ -1565,6 +1570,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: aa128bab4449def1981cbf77b0f09310
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ContinueSystem
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class ButtonManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject continueSystem;
+
     void Start()
     {
 
@@ -25,7 +27,8 @@ public class ButtonManager : MonoBehaviour
 
     public void LoadGame()
     {
-
+        SceneManager.LoadScene(1);
+        continueSystem.GetComponent<ContinueSystem>().SetContinueClick(true);
     }
 
     public void Open(GameObject panel)
