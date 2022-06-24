@@ -23,10 +23,13 @@ public class PlayerData
 
     public int isBackHammerQuest;
 
+    public float SwordDamage;
+
     public PlayerData(PlayerControl player)
     {
         stamina = player.stamina;
         health = player.hp;
+        SwordDamage = player.SwordDamage;
 
         //Check collect weapon
         if (player.isCollectSword)

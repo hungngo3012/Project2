@@ -96,6 +96,13 @@ public class PlayerControl : MonoBehaviour
     public InteractNPC[] npc;
     public bool isBackHammerQuest;
 
+    //DamageSave
+    public GameObject WeaponJ;
+    public GameObject WeaponK;
+
+    public float SwordDamage;
+
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -125,6 +132,8 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SwordDamage = WeaponJ.GetComponent<Attack>().damage;
+
         Vector3 eulerRotation = transform.rotation.eulerAngles;
         transform.rotation = Quaternion.Euler(0, eulerRotation.y, 0);
 
@@ -423,9 +432,13 @@ public class PlayerControl : MonoBehaviour
         //Load player status
         hp = data.health;
         stamina = data.stamina;
+        SwordDamage = data.SwordDamage;
+
+        WeaponJ.GetComponent<Attack>().damage = SwordDamage;
+        WeaponK.GetComponent<Attack>().damage = SwordDamage*2;
 
         //Load Collect Weapon status
-        if(data.isCollectSword == 1)
+        if (data.isCollectSword == 1)
         {
             CollectSword();
         }

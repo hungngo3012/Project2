@@ -14,6 +14,9 @@ public class Collect : MonoBehaviour
     Transform TakeQuestNPC;
 
     [SerializeField]
+    Transform CheckCompletePanel;
+
+    [SerializeField]
     private AudioSource CollectAudio;
 
     public Item item;
@@ -21,6 +24,7 @@ public class Collect : MonoBehaviour
     bool canInt = false;
     bool isInteract = false;
     bool isTakeQuest = false;
+    bool isCompleteQuest;
     //private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -30,7 +34,7 @@ public class Collect : MonoBehaviour
 
     void OnTriggerEnter(Collider info)
     {
-        if ((info.gameObject.tag == "Player") && !isInteract && isTakeQuest)
+        if ((info.gameObject.tag == "Player") && !isInteract && isTakeQuest && !isCompleteQuest)
         {
             canInt = true;
             CanInteract.gameObject.SetActive(true);
@@ -49,8 +53,13 @@ public class Collect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(CheckCompletePanel.gameObject.activeSelf)
+        {
+            isCompleteQuest = true;
+        }
+
         isTakeQuest = TakeQuestNPC.gameObject.GetComponent<InteractNPC>().isInteract;
-        if ((Input.GetKeyDown(KeyCode.E)) && canInt && isTakeQuest)
+        if ((Input.GetKeyDown(KeyCode.E)) && canInt && isTakeQuest && !isCompleteQuest)
         {
             CollectAudio.Play();
             //animator.SetBool("isInteract", true);
