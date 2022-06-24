@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     public float hp = 10.0f;
     public float maxHP = 10.0f;
 
-    private bool isDie = false;
+    public bool isDie;
     public bool isKnock = false;
     private Animator animator;
 
@@ -87,6 +87,11 @@ public class Enemy : MonoBehaviour
     public bool GetDieStatus()
     {
         return isDie;
+    }
+
+    public void SetDieStatus(bool val)
+    {
+        isDie = val;
     }
     public bool GetKnockStatus()
     {

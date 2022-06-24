@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - ActiveTrigger
     - Attack
     - BossActive
+    - BossManager
     - Bullet
     - ButtonManager
     - Camera
@@ -45,8 +46,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -446,6 +449,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8782}
     - Class: 114
       Script: {instanceID: 8834}
+    - Class: 114
+      Script: {instanceID: 186210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -751,7 +756,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 08f4c11a9866619295487b7ee2fe81e3
+      Hash: 03c07d3b9de2a7d331408de30d045aee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu
@@ -907,7 +912,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6ce7df480554546cd51b43788a1e4208
+      Hash: 546b3243ee19fb321b357984472dc9f0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -961,7 +966,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 39b9f07155de61e3a9aa83a178d88e8b
+      Hash: 33cd5f86bb00cce1366e32f948a13612
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerControl
@@ -1561,7 +1566,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 8e84404f2586faf36b8b13506ba3b01f
+      Hash: 2f586a702ddcff5213c18dadff870912
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GruAI
@@ -1577,6 +1582,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: aed1d0497b66454b6505c707fba51dcf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BossManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

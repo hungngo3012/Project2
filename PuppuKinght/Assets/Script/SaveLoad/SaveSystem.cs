@@ -38,4 +38,38 @@ public static class SaveSystem
             return null;
         }
     }
+
+    //Boss
+    public static void SaveBoss(BossManager boss)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/boss.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        BossData data = new BossData(boss);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static BossData LoadBoss()
+    {
+        string path = Application.persistentDataPath + "/boss.fun";
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            BossData data = formatter.Deserialize(stream) as BossData;
+            stream.Close();
+
+            return data;
+        }
+        else
+        {
+            Debug.LogError("Save file not found in" + path);
+            return null;
+        }
+    }
 }

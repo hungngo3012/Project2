@@ -26,6 +26,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject Player;
 
+    public GameObject Boss;
+
 
 
     void Start()
@@ -99,6 +101,7 @@ public class PauseMenu : MonoBehaviour
     public void Save()
     {
         Player.GetComponent<PlayerControl>().SavePlayer();
+        Boss.GetComponent<BossManager>().SaveBoss();
     }
 
     public void OpenMap()

@@ -6,6 +6,8 @@ public class ContinueSystem : MonoBehaviour
 {
     GameObject loadSystem;
 
+    GameObject boss;
+
     public bool continueClick;
 
     private bool isLoad;
@@ -21,10 +23,13 @@ public class ContinueSystem : MonoBehaviour
     void Update()
     {
         loadSystem = GameObject.Find("Player");
+
+        boss = GameObject.Find("BossManager");
+        /*
         if(loadSystem == null)
         {
             Debug.Log("nooo");
-        }
+        }*/
 
         if ((loadSystem != null) && continueClick && !isLoad)
         {
@@ -35,6 +40,7 @@ public class ContinueSystem : MonoBehaviour
     public void ContinueActive()
     {
         loadSystem.GetComponent<PlayerControl>().LoadPlayer();
+        boss.GetComponent<BossManager>().LoadBoss();
         isLoad = true;
         //StartCoroutine(Coroutine());
     }

@@ -62,6 +62,10 @@ public class PlayerControl : MonoBehaviour
     public bool isCollectShield = false;
     public bool isCollectBomb = false;
 
+    public GameObject CollectSwordPanel;
+    public GameObject CollectShieldPanel;
+    public GameObject CollectBombPanel;
+
     //temp
     Rigidbody rb;
     Rigidbody bul;
@@ -74,7 +78,10 @@ public class PlayerControl : MonoBehaviour
     public bool isCollectSoul;
     public bool isCollectWisdom;
 
+    bool isCollectLifeConFirm;
+
     public Transform CollectLifePanel;
+    public Transform CollectLifePanelQuest;
 
     //Slope Handle
     [Header("Slope Handling")]
@@ -284,9 +291,11 @@ public class PlayerControl : MonoBehaviour
             //staminaBar.SetHealth(stamina);
         }
 
-        if(isCollectLife && CollectLifePanel.gameObject.activeSelf)
+        if(isCollectLife && !isCollectLifeConFirm)
         {
             CollectLifePanel.gameObject.SetActive(true);
+            CollectLifePanelQuest.gameObject.SetActive(true);
+            isCollectLifeConFirm = true;
         }
 
         if (stamina < 100)
@@ -364,17 +373,20 @@ public class PlayerControl : MonoBehaviour
     public void CollectSword()
     {
         Sword.gameObject.SetActive(true);
+        CollectSwordPanel.SetActive(true);
         isCollectSword = true;
     }
 
     public void CollectShield()
     {
         Shield.gameObject.SetActive(true);
+        CollectShieldPanel.SetActive(true);
         isCollectShield = true;
     }
 
     public void CollectBomb()
     {
+        CollectBombPanel.SetActive(true);
         isCollectBomb = true;
     }
 

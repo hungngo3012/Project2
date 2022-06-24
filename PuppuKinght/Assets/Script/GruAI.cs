@@ -58,6 +58,9 @@ public class GruAI : MonoBehaviour
     Rigidbody rb;
     public StatusBar healthBar;
 
+    //Save
+    public BossManager bossManager;
+
 
     private void Awake()
     {
@@ -126,6 +129,7 @@ public class GruAI : MonoBehaviour
 
     private void Die()
     {
+        bossManager.isGruDie = true;
         BossMusic.gameObject.SetActive(false);
         CurrentMusic.gameObject.SetActive(true);
     }
