@@ -46,8 +46,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -207,6 +209,9 @@ ScriptsOnlyBuild:
     methodName: Close
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
     methodName: OpenPack
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
@@ -214,6 +219,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: Save
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Open
   sceneClasses:
     Assets/Scenes/MainMenu.unity:
     - Class: 1
