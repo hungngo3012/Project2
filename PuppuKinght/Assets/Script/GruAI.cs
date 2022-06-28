@@ -125,6 +125,12 @@ public class GruAI : MonoBehaviour
             BossHP.gameObject.SetActive(false);
             Invoke(nameof(Die), 3.0f);
         }
+
+        if(transform.gameObject.GetComponent<Enemy>().hp < 200.0f)
+        {
+            transform.gameObject.GetComponent<Enemy>().UpdateHealth(0.006f);
+            healthBar.SetHealth(transform.GetComponent<Enemy>().GetHp());
+        }
     }
 
     private void Die()
