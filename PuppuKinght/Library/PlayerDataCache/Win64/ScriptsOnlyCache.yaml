@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - ClosePanel
     - Collect
     - CollectBomb
+    - CollectionManager
     - CompleteHammerQuest
     - ContinueSystem
     - Enemy
@@ -30,6 +31,7 @@ ScriptsOnlyBuild:
     - Inventory
     - Item
     - LowPolyWater.LowPolyWater
+    - MenuCollectionManager
     - NextPanel
     - OpenChest
     - OpenChestShield
@@ -47,8 +49,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -97,10 +101,34 @@ ScriptsOnlyBuild:
     methodName: Close
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
     methodName: Open
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
     methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
     methodName: Close
@@ -118,7 +146,31 @@ ScriptsOnlyBuild:
     methodName: Open
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
     methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Close
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManager
+    methodName: Open
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManager
     methodName: Open
@@ -274,15 +326,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3296}
     - Class: 114
-      Script: {instanceID: 6186}
+      Script: {instanceID: 6188}
     - Class: 114
-      Script: {instanceID: 6724}
+      Script: {instanceID: 6726}
     - Class: 114
-      Script: {instanceID: 6768}
+      Script: {instanceID: 6770}
     - Class: 114
-      Script: {instanceID: 7124}
+      Script: {instanceID: 7126}
     - Class: 114
-      Script: {instanceID: 8388}
+      Script: {instanceID: 8390}
+    - Class: 114
+      Script: {instanceID: 357782}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -395,69 +449,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4374}
     - Class: 114
-      Script: {instanceID: 4624}
+      Script: {instanceID: 4424}
     - Class: 114
-      Script: {instanceID: 4702}
+      Script: {instanceID: 4626}
     - Class: 114
-      Script: {instanceID: 5018}
+      Script: {instanceID: 4704}
     - Class: 114
-      Script: {instanceID: 5036}
+      Script: {instanceID: 5020}
     - Class: 114
-      Script: {instanceID: 5114}
+      Script: {instanceID: 5038}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5190}
+      Script: {instanceID: 5156}
     - Class: 114
-      Script: {instanceID: 5308}
+      Script: {instanceID: 5192}
     - Class: 114
-      Script: {instanceID: 5436}
+      Script: {instanceID: 5310}
     - Class: 114
-      Script: {instanceID: 5458}
+      Script: {instanceID: 5438}
     - Class: 114
-      Script: {instanceID: 5476}
+      Script: {instanceID: 5460}
     - Class: 114
-      Script: {instanceID: 5756}
+      Script: {instanceID: 5478}
     - Class: 114
-      Script: {instanceID: 5794}
+      Script: {instanceID: 5758}
     - Class: 114
-      Script: {instanceID: 5900}
+      Script: {instanceID: 5796}
     - Class: 114
-      Script: {instanceID: 6004}
+      Script: {instanceID: 5902}
     - Class: 114
-      Script: {instanceID: 6186}
+      Script: {instanceID: 6006}
     - Class: 114
-      Script: {instanceID: 6196}
+      Script: {instanceID: 6188}
     - Class: 114
-      Script: {instanceID: 6340}
+      Script: {instanceID: 6198}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6342}
     - Class: 114
-      Script: {instanceID: 6520}
+      Script: {instanceID: 6476}
     - Class: 114
-      Script: {instanceID: 6724}
+      Script: {instanceID: 6522}
     - Class: 114
-      Script: {instanceID: 6734}
+      Script: {instanceID: 6726}
     - Class: 114
-      Script: {instanceID: 7086}
+      Script: {instanceID: 6736}
     - Class: 114
-      Script: {instanceID: 7124}
+      Script: {instanceID: 7088}
     - Class: 114
-      Script: {instanceID: 7222}
+      Script: {instanceID: 7126}
     - Class: 114
-      Script: {instanceID: 7438}
+      Script: {instanceID: 7224}
     - Class: 114
-      Script: {instanceID: 7748}
+      Script: {instanceID: 7440}
     - Class: 114
-      Script: {instanceID: 7760}
+      Script: {instanceID: 7750}
     - Class: 114
-      Script: {instanceID: 7902}
+      Script: {instanceID: 7762}
     - Class: 114
-      Script: {instanceID: 7998}
+      Script: {instanceID: 7904}
     - Class: 114
-      Script: {instanceID: 8790}
+      Script: {instanceID: 8000}
     - Class: 114
-      Script: {instanceID: 8842}
+      Script: {instanceID: 8792}
+    - Class: 114
+      Script: {instanceID: 8844}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -925,7 +981,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 546b3243ee19fb321b357984472dc9f0
+      Hash: 1c3f6a8e81f7e615c2cc4cbde586f96e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -979,7 +1035,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: c04354eac8b58ffe0c7ba7046e8bb54d
+      Hash: 331eee0a079397307856884c19ea8768
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerControl
@@ -995,6 +1051,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: aa446a81e51cbe990bc67713eaec048c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollectionManager
   - hash:
       serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
@@ -1159,7 +1221,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: d5759e8462ee9edaae0ba0e278bafe35
+      Hash: 4b828681e0a800490328b8175b2d69a4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InteractNPC
@@ -1339,7 +1401,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 6681a61d42755818c8d70db7ac32ced5
+      Hash: a87a55b77db4602fb5c63b889f3904c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ButtonManager
@@ -1543,7 +1605,7 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
-      Hash: aa128bab4449def1981cbf77b0f09310
+      Hash: d071f22baf58736c58d3710b5d475f56
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ContinueSystem
@@ -1601,6 +1663,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c3c91cf854ed50e935e5e08b13d68e8d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuCollectionManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

@@ -102,6 +102,8 @@ public class PlayerControl : MonoBehaviour
 
     public float SwordDamage;
 
+    //pause
+    public bool isPause = false;
 
     void Start()
     {
@@ -307,12 +309,12 @@ public class PlayerControl : MonoBehaviour
             isCollectLifeConFirm = true;
         }
 
-        if (stamina < 100)
+        if ((stamina < 100) && !isPause)
         {
             stamina = stamina + 0.05f;           
         }
 
-        if (hp < 100)
+        if ((hp < 100) && !isPause)
         {
             hp = hp + 0.001f;
             if (isCollectLife)

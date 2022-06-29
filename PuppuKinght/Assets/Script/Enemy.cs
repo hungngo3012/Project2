@@ -19,6 +19,9 @@ public class Enemy : MonoBehaviour
 
     public AudioSource[] DieVoice;
 
+    public int type;
+    public CollectionManager CollectionManager;
+
     Collider m_ObjectCollider;
     // Start is called before the first frame update
     void Start()
@@ -33,6 +36,25 @@ public class Enemy : MonoBehaviour
         //Vector3 movementDirection = new Vector3(0, 0, -1.0f);
         if (isDie)
         {
+            if((type == 0) && !CollectionManager.isCollectBlue)
+            {
+                CollectionManager.isCollectBlue = true;
+            }
+
+            if ((type == 1) && !CollectionManager.isCollectRed)
+            {
+                CollectionManager.isCollectRed = true;
+            }
+
+            if ((type == 2) && !CollectionManager.isCollectAlpha)
+            {
+                CollectionManager.isCollectAlpha = true;
+            }
+
+            if ((type == 3) && !CollectionManager.isCollectGru)
+            {
+                CollectionManager.isCollectGru = true;
+            }
             StartCoroutine(Coroutine());
         }
 

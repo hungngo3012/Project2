@@ -12,7 +12,7 @@ public class ContinueSystem : MonoBehaviour
 
     public bool continueClick;
 
-    private bool isLoad;
+    public bool isLoad;
     // Start is called before the first frame update
     void Start()
     {

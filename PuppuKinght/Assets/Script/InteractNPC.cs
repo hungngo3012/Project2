@@ -99,6 +99,9 @@ public class InteractNPC : MonoBehaviour
     bool canInt = false;
     bool isSetMenu = false;
     public bool isInteract;
+
+    public int type;
+    public CollectionManager CollectionManager;
     //private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -140,6 +143,26 @@ public class InteractNPC : MonoBehaviour
             CanInteract.gameObject.SetActive(false);
             Panel.gameObject.SetActive(true);
             canInt = false;
+
+            if((type == 4) && !CollectionManager.isCollectVike)
+            {
+                CollectionManager.isCollectVike = true;
+            }
+
+            if ((type == 5) && !CollectionManager.isCollectSnape)
+            {
+                CollectionManager.isCollectSnape = true;
+            }
+
+            if ((type == 6) && !CollectionManager.isCollectHammer)
+            {
+                CollectionManager.isCollectHammer = true;
+            }
+
+            if ((type == 7) && !CollectionManager.isCollectLeon)
+            {
+                CollectionManager.isCollectLeon = true;
+            }
             //StartCoroutine(Coroutine());
         }
 

@@ -54,6 +54,7 @@ public class PauseMenu : MonoBehaviour
     {
         SettingPanel.SetActive(false);
         PauseMenuUI.SetActive(false);
+        Player.GetComponent<PlayerControl>().isPause = false;
         Time.timeScale = 1f;
         GameisPause = false;
     }
@@ -61,6 +62,7 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         PauseMenuUI.SetActive(true);
+        Player.GetComponent<PlayerControl>().isPause = true;
         Time.timeScale = 0f;
         GameisPause = true;
     }

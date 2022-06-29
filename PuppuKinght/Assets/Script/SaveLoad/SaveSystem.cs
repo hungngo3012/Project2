@@ -106,4 +106,38 @@ public static class SaveSystem
             return null;
         }
     }
+
+    //Collection
+    public static void SaveCollection(MenuCollectionManager collection)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/collection.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        MenuCollectionData data = new MenuCollectionData(collection);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static MenuCollectionData LoadCollection()
+    {
+        string path = Application.persistentDataPath + "/collection.fun";
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            MenuCollectionData data = formatter.Deserialize(stream) as MenuCollectionData;
+            stream.Close();
+
+            return data;
+        }
+        else
+        {
+            Debug.LogError("Save file not found in" + path);
+            return null;
+        }
+    }
 }
