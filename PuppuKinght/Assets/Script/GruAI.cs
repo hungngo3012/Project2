@@ -128,7 +128,7 @@ public class GruAI : MonoBehaviour
 
         if(transform.gameObject.GetComponent<Enemy>().hp < 200.0f)
         {
-            transform.gameObject.GetComponent<Enemy>().UpdateHealth(0.006f);
+            transform.gameObject.GetComponent<Enemy>().UpdateHealth(0.01f);
             healthBar.SetHealth(transform.GetComponent<Enemy>().GetHp());
         }
     }

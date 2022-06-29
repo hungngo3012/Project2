@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - ButtonManager
     - Camera
     - ChangeCheckPoint
+    - ChestManager
     - ClosePanel
     - Collect
     - CollectBomb
@@ -46,8 +47,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -455,6 +458,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8786}
     - Class: 114
       Script: {instanceID: 8838}
+    - Class: 114
+      Script: {instanceID: 203056}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -574,7 +579,7 @@ ScriptsOnlyBuild:
     className: GameManager
   - hash:
       serializedVersion: 2
-      Hash: 737112ecfbc9419c4bdf02d1871bd11e
+      Hash: 7b2ae36cf958de672f9221f9be4a6e62
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OpenEmptyChest
@@ -766,7 +771,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 03c07d3b9de2a7d331408de30d045aee
+      Hash: ada1c881061ff6aeaa31b1b21c8f6dd2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu
@@ -1210,7 +1215,7 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: df9a6d42896d7535e40c506c0038bb4e
+      Hash: f318afe5ad4321124e8ecb212f36b8ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OpenChestShield
@@ -1486,7 +1491,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: df9a6d42896d7535e40c506c0038bb4e
+      Hash: f318afe5ad4321124e8ecb212f36b8ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OpenChest
@@ -1592,6 +1597,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: fe5953cc06266aea4a445d175f8e208f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChestManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

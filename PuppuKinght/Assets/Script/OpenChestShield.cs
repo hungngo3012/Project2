@@ -17,7 +17,8 @@ public class OpenChestShield : MonoBehaviour
     private AudioSource OpenAudio;
 
     bool canOpen = false;
-    bool isOpen = false;
+    public bool isOpen;
+    int i = 0;
     private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -47,6 +48,13 @@ public class OpenChestShield : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isOpen && (i == 0))
+        {
+            animator.SetBool("isOpen", true);
+            //CanInteract.gameObject.SetActive(false);
+            i++;
+        }
+
         if ((Input.GetKey(KeyCode.E)) && canOpen)
         {
             OpenAudio.Play();

@@ -8,6 +8,8 @@ public class ContinueSystem : MonoBehaviour
 
     GameObject boss;
 
+    GameObject chest;
+
     public bool continueClick;
 
     private bool isLoad;
@@ -25,13 +27,15 @@ public class ContinueSystem : MonoBehaviour
         loadSystem = GameObject.Find("Player");
 
         boss = GameObject.Find("BossManager");
+
+        chest = GameObject.Find("ChestManager");
         /*
         if(loadSystem == null)
         {
             Debug.Log("nooo");
         }*/
 
-        if ((loadSystem != null) && continueClick && !isLoad)
+        if ((loadSystem != null) && continueClick && !isLoad && (boss != null) && (isLoad != null))
         {
             ContinueActive();
         }
@@ -41,7 +45,9 @@ public class ContinueSystem : MonoBehaviour
     {
         loadSystem.GetComponent<PlayerControl>().LoadPlayer();
         boss.GetComponent<BossManager>().LoadBoss();
+        chest.GetComponent<ChestManager>().LoadChest();
         isLoad = true;
+        //continueClick = false;
         //StartCoroutine(Coroutine());
     }
 

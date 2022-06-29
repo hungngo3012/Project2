@@ -72,4 +72,38 @@ public static class SaveSystem
             return null;
         }
     }
+
+    //Chest
+    public static void SaveChest(ChestManager chest)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/chest.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        ChestData data = new ChestData(chest);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static ChestData LoadChest()
+    {
+        string path = Application.persistentDataPath + "/chest.fun";
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            ChestData data = formatter.Deserialize(stream) as ChestData;
+            stream.Close();
+
+            return data;
+        }
+        else
+        {
+            Debug.LogError("Save file not found in" + path);
+            return null;
+        }
+    }
 }
