@@ -9,7 +9,7 @@ public class StatusBar : MonoBehaviour
 
     public void SetMaxHealth(float hp)
     {
-        slider.maxValue = hp;
+        slider.maxValue = 100.0f;
         slider.value = hp;
     }
 

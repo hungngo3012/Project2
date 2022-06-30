@@ -17,8 +17,6 @@ public class ContinueSystem : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-
-
     }
 
     // Update is called once per frame
@@ -35,7 +33,7 @@ public class ContinueSystem : MonoBehaviour
             Debug.Log("nooo");
         }*/
 
-        if ((loadSystem != null) && continueClick && !isLoad && (boss != null) && (isLoad != null))
+        if ((loadSystem != null) && continueClick && !isLoad && (boss != null))
         {
             ContinueActive();
         }
@@ -49,11 +47,17 @@ public class ContinueSystem : MonoBehaviour
         isLoad = true;
         //continueClick = false;
         //StartCoroutine(Coroutine());
+        DestroyThis();
     }
 
     public void SetContinueClick(bool val)
     {
         continueClick = val;
+    }
+
+    public void DestroyThis()
+    {
+        Destroy(gameObject);
     }
 
     IEnumerator Coroutine()

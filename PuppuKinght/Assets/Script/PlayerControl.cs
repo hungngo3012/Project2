@@ -35,8 +35,8 @@ public class PlayerControl : MonoBehaviour
     public float dashSpeed = 50.0f;
 
     public float rotationSpeed = 720.0f;
-    public float stamina = 100.0f;
-    public float hp = 100.0f;
+    public float stamina;
+    public float hp;
 
     public StatusBar healthBar;
     public StatusBar staminaBar;

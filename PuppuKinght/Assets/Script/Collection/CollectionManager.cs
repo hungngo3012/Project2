@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectionManager : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class CollectionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Scene scene = SceneManager.GetActiveScene();
         MenuCollectionManager = GameObject.Find("MenuCollectionManager");
         if(MenuCollectionManager != null)
         {
@@ -67,6 +69,13 @@ public class CollectionManager : MonoBehaviour
             {
                 MenuCollectionManager.GetComponent<MenuCollectionManager>().isCollectLeon = true;
             }
+
+            Destroy(gameObject);
+        }
+
+        if((scene.buildIndex > 1))
+        {
+            Destroy(gameObject);
         }
     }
 }

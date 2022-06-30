@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class ChestManager : MonoBehaviour
 {
     public bool isOpenChest0;
@@ -9,14 +9,20 @@ public class ChestManager : MonoBehaviour
     public bool isOpenChest2;
     public bool isOpenChest3;
 
+    public bool isOpenSubChest2;
+
     public GameObject chest0;
     public GameObject chest1;
     public GameObject chest2;
     public GameObject chest3;
+
+    public PlayerControl Player;
+    public BossManager boss;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -91,6 +97,28 @@ public class ChestManager : MonoBehaviour
         {
             isOpenChest3 = false;
         }
+
+        if (data.isOpenSubChest2 == 1)
+        {
+            isOpenSubChest2 = true;
+        }
+        else
+        {
+            isOpenSubChest2 = false;
+        }
     }
 
+    public void LoadAgainAllData()
+    {
+        Player.LoadPlayer();
+        boss.LoadBoss();
+        LoadChest();
+    }
+
+    public void SaveAllData()
+    {
+        Player.SavePlayer();
+        boss.SaveBoss();
+        SaveChest();
+    }
 }
