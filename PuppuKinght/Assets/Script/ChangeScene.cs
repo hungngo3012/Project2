@@ -49,9 +49,9 @@ public class ChangeScene : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.E)) && canInt)
         {
-            SaveSystem.SavePlayer(Player);
-            SaveSystem.SaveBoss(BossManager);
-            SaveSystem.SaveChest(ChestManager);
+            Player.SavePlayer();
+            BossManager.SaveBoss();
+            ChestManager.SaveChest();
 
             SceneManager.LoadScene(NextSceneIndex);
         }

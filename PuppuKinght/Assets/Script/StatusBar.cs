@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class StatusBar : MonoBehaviour
 {
     public Slider slider;
-
+    public float maxValue;
     public void SetMaxHealth(float hp)
     {
-        slider.maxValue = 100.0f;
+        slider.maxValue = maxValue;
         slider.value = hp;
     }
 

@@ -105,6 +105,9 @@ public class PlayerControl : MonoBehaviour
     //pause
     public bool isPause = false;
 
+    //subScene
+    public int typeMove;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -217,7 +220,18 @@ public class PlayerControl : MonoBehaviour
             isAttack = false;
         }
 
-        movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        if(typeMove == 0)
+        {
+            movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        }
+        else
+        {
+            if(typeMove == 1)
+            {
+                movementDirection = BulletPos.forward * verticalInput + BulletPos.right * horizontalInput;
+            }
+        }
+
 
         //on Slope
         if (OnSlope())
@@ -254,12 +268,26 @@ public class PlayerControl : MonoBehaviour
             animator.SetBool("isMove", true);
             //weaponJ.UnActive();
             //weaponK.UnActive();
-            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            if(typeMove == 0)
+            {
+                Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            }
         }
         else
         {
             animator.SetBool("isMove", false);
+        }
+
+        if (typeMove == 1)
+        {
+            Vector3 mouse = Input.mousePosition;
+            Vector3 mouseWorld = UnityEngine.Camera.main.ScreenToWorldPoint(new Vector3(mouse.x, mouse.y, transform.position.y));
+            Vector3 forward = mouseWorld - transform.position;
+            Quaternion toRotation = Quaternion.LookRotation(forward, Vector3.up);
+            toRotation.x = 0;
+            toRotation.z = 0;
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * 0.15f *Time.deltaTime);
         }
 
         if ((Input.GetKeyDown(KeyCode.Space)) && (stamina > 20) && (movementDirection != Vector3.zero))
