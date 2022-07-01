@@ -1,361 +1,368 @@
 ﻿{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1656685287699838, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685287701623, "dur": 32297, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685287734145, "dur": 1955876, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685289690058, "dur": 10069, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685298494104, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685298494428, "dur": 10760, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685298505191, "dur": 560300, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685299065493, "dur": 9819, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685299075821, "dur": 47, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690668612862, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690668614916, "dur": 39258, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690668654503, "dur": 201065, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690668855626, "dur": 10504, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690680087942, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690680088343, "dur": 3364, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690680091709, "dur": 832614, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690680924326, "dur": 7373, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690777143959, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690777143992, "dur": 26289, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690777170283, "dur": 166941, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690777337227, "dur": 10067, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690789414248, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690789414278, "dur": 16453, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690789430734, "dur": 777288, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690790208025, "dur": 15708, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690790224353, "dur": 68, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1656685298555696, "dur":1050, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685298556758, "dur":163, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1656685298556947, "dur":23, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1656685298556972, "dur":383, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1656685298557429, "dur":1055, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685298558485, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299040941, "dur":156, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041097, "dur":28, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041125, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041129, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041139, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041142, "dur":17, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041159, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041161, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041170, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041189, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299041196, "dur":2197, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1656685298557894, "dur":610, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298558509, "dur":7329, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298565864, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1656685298565866, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298565915, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1656685298565917, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298565937, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566000, "dur":193, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566194, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566287, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566338, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566419, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566487, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566564, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566597, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566729, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566757, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566821, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566902, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566936, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566957, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566978, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298566995, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567016, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567032, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567050, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567075, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567093, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567109, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567128, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567144, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567160, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567175, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567191, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567206, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567224, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567239, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567258, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567276, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567344, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567368, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567386, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567403, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567421, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567437, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567456, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567471, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567489, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567505, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567527, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567541, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567559, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567575, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567592, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567613, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567630, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567646, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567662, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567827, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567860, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567879, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567898, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567915, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567934, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567951, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567969, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298567987, "dur":61806, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298629794, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298629845, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298629876, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298629901, "dur":108916, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685298738818, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685298738863, "dur":301980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.dll" }}
-,{ "pid":12345, "tid":1, "ts":1656685299040844, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1656685299040896, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":1, "ts":1656685299040897, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298557969, "dur":550, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298558520, "dur":7333, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298565864, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":2, "ts":1656685298565999, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566106, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566188, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566226, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566304, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566362, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566440, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566504, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566582, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566603, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566756, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566783, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566808, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566826, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566853, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566963, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298566993, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567013, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567032, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567050, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567079, "dur":13, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567093, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567112, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567127, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567144, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298567160, "dur":163333, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298730494, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298730539, "dur":88721, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819261, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819305, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819328, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819375, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819398, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819431, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819449, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819478, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819497, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819526, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819544, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819572, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819590, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819618, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819636, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819663, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819681, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819707, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819726, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819755, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819781, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819809, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819827, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819855, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819872, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819899, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819918, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819933, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819950, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819978, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298819997, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820025, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820044, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820059, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820075, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820102, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820120, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820149, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820169, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820184, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820202, "dur":13, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820216, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820232, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298820259, "dur":165724, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298985994, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1656685298986055, "dur":926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1656685298987007, "dur":53922, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298558051, "dur":486, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298558537, "dur":7318, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298565864, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1656685298565966, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566059, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566144, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566212, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566294, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566378, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566458, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566522, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566598, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566628, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566753, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566781, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566809, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298566838, "dur":196, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567035, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567066, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567087, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567103, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567122, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567139, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567162, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567179, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567204, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567222, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567247, "dur":12, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567260, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567279, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567369, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567387, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567403, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567420, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567437, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567456, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567471, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567488, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567505, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567523, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567538, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567562, "dur":13, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567575, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567592, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567607, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567630, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567647, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567663, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567818, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567848, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567866, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567890, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567906, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567935, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567954, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567971, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298567987, "dur":120626, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298688614, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298688662, "dur":46506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.Stl.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298735169, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298735213, "dur":31728, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298766942, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298766986, "dur":59810, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.Csg.dll" }}
-,{ "pid":12345, "tid":3, "ts":1656685298826797, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298826850, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":3, "ts":1656685298826897, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298827415, "dur":3139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":3, "ts":1656685298830577, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298830605, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298830615, "dur":3411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298834050, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298834079, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298834090, "dur":1017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298835129, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.resource" }}
-,{ "pid":12345, "tid":3, "ts":1656685298835158, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298835192, "dur":2913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.resource" }}
-,{ "pid":12345, "tid":3, "ts":1656685298838129, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298838159, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298838169, "dur":15432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298853624, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298853653, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298853662, "dur":5239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298858924, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":3, "ts":1656685298858952, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298858961, "dur":9205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":3, "ts":1656685298868188, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298868216, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298868226, "dur":1923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298870171, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298870223, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298870233, "dur":1436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298871691, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":3, "ts":1656685298871821, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298871843, "dur":11106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":3, "ts":1656685298882950, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298882998, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298883031, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298883041, "dur":1603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298884667, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298884695, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298884704, "dur":705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298885427, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level2" }}
-,{ "pid":12345, "tid":3, "ts":1656685298885452, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298885461, "dur":947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level2" }}
-,{ "pid":12345, "tid":3, "ts":1656685298886430, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level1.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298886456, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298886464, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level1.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298887278, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level1" }}
-,{ "pid":12345, "tid":3, "ts":1656685298887303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298887334, "dur":2220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level1" }}
-,{ "pid":12345, "tid":3, "ts":1656685298889578, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level0.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298889606, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298889615, "dur":883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level0.resS" }}
-,{ "pid":12345, "tid":3, "ts":1656685298890519, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1656685298890547, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298890555, "dur":770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1656685298891347, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298891376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298891385, "dur":1035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":3, "ts":1656685298892444, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":3, "ts":1656685298892473, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298892483, "dur":762, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":3, "ts":1656685298893266, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/boot.config" }}
-,{ "pid":12345, "tid":3, "ts":1656685298893397, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1656685298893423, "dur":147507, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298558105, "dur":447, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298558552, "dur":7304, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298565864, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1656685298565982, "dur":193, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566177, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566257, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566323, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566396, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566428, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566506, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566540, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566622, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566652, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure.exe" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566753, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566781, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566823, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298566851, "dur":348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567199, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567222, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567242, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567259, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567337, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567379, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567398, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567415, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567436, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567455, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567475, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567491, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567508, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567523, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567540, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567556, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567574, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567593, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567615, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567635, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567654, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567668, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567918, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567943, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567960, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567974, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298567995, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298568010, "dur":100869, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298668880, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298668921, "dur":323320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":4, "ts":1656685298992242, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1656685298992289, "dur":48633, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1656685299045337, "dur":2543, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1656685299075982, "dur": 890, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1656685299075805, "dur": 1105, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1656690789489483, "dur":1692, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690789491199, "dur":302, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1656690789491544, "dur":38, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1656690789491585, "dur":469, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1656690789492140, "dur":1374, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690789493514, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184453, "dur":186, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184639, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184659, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184663, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184679, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184683, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184697, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184701, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184713, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184733, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790184802, "dur":2502, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1656690789492936, "dur":602, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789493544, "dur":9878, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503454, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503456, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503503, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503506, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503532, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503640, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503691, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503786, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503825, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503905, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789503951, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504025, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504193, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504272, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504308, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504386, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504464, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure.exe" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504496, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504521, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504545, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789504566, "dur":8301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789512869, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789512938, "dur":199904, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789712842, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789712895, "dur":103137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816033, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816084, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816147, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816261, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816300, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816344, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816370, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816487, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816516, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816556, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816580, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816617, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816641, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816678, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816702, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816737, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816761, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816795, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816820, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816856, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816881, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816917, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816941, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789816976, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817022, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817065, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817091, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817109, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817132, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817172, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817195, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817237, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817260, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817277, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817298, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817330, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817353, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817386, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817409, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817427, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817449, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817466, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817486, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690789817517, "dur":278701, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1656690790096219, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1656690790096262, "dur":88168, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789493002, "dur":553, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789493555, "dur":9881, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789503454, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1656690789503594, "dur":330, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789503926, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504007, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504039, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504121, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504205, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504297, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504320, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504388, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504411, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504496, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504520, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504548, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504567, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504597, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504624, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504649, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504670, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504697, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504718, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504740, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504761, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504788, "dur":15, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504804, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504832, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504853, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504878, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504896, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504919, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504938, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504963, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789504981, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505002, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505019, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505039, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505065, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505091, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505111, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505136, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505162, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505193, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505211, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505233, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505253, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505274, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505294, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505325, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505350, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505375, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505394, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505422, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505443, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505465, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505485, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505508, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505528, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505550, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505570, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505594, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505614, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505637, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505658, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505680, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505702, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505730, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505751, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505773, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505915, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505944, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505964, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789505989, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789506010, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789506037, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789506058, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789506080, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789506099, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789506123, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789506144, "dur":84762, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789590907, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789590954, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789590981, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789591003, "dur":160481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789751485, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789751536, "dur":52801, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789804339, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789804391, "dur":63270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":2, "ts":1656690789867662, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789867718, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1656690789867766, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789868438, "dur":3991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1656690789872456, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789872486, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789872496, "dur":4097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789876622, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789876655, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789876665, "dur":1468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789878165, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1656690789878197, "dur":8, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789878286, "dur":3696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1656690789882009, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789882040, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789882050, "dur":18209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789900288, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789900323, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789900334, "dur":9230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789909592, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":2, "ts":1656690789909623, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789909634, "dur":6285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":2, "ts":1656690789915945, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789915976, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789915987, "dur":2364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789918376, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789938546, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789938562, "dur":2322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789940911, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1656690789941054, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789941077, "dur":13099, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1656690789954176, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789954222, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789954257, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789954267, "dur":2179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789956471, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789956504, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789956514, "dur":1224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789957763, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level2" }}
+,{ "pid":12345, "tid":2, "ts":1656690789957794, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789957804, "dur":3141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level2" }}
+,{ "pid":12345, "tid":2, "ts":1656690789960970, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789961000, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789961011, "dur":1368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789962405, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1656690789962433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789962481, "dur":2984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1656690789965493, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789965524, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789965534, "dur":1128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1656690789966687, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1656690789966717, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789966727, "dur":952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1656690789967704, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789967735, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789967745, "dur":1009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1656690789968779, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1656690789968811, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789968821, "dur":833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1656690789969679, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1656690789969815, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1656690789969842, "dur":214591, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789493052, "dur":517, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789493569, "dur":10052, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789503621, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1656690789503717, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789503760, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1656690789503830, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789503897, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1656690789503993, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504037, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504121, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504259, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504340, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504377, "dur":219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504597, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504618, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504649, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504675, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504701, "dur":16, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504718, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504741, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504760, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504784, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789504805, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505056, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505086, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505110, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505130, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505162, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505191, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505217, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505237, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505261, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505281, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505303, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505323, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505349, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505369, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505396, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505415, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505438, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505458, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505480, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505501, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505524, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505543, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505566, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505585, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505607, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505628, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505656, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505678, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505701, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505720, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505742, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505761, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505782, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505922, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505957, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789505979, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789506002, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789506021, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789506045, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789506065, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789506087, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789506108, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789506135, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789506159, "dur":160891, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690789667051, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690789667111, "dur":454549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1656690790121662, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1656690790121706, "dur":62726, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789493107, "dur":476, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789493583, "dur":9859, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789503454, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1656690789503575, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789503662, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1656690789503760, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789503799, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1656690789503873, "dur":208, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504083, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504202, "dur":280, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504483, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504558, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504584, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504620, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504643, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504670, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504698, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504723, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504744, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504770, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504791, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504816, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504837, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504864, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789504885, "dur":199430, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690789704316, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789704371, "dur":78232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690789782604, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690789782645, "dur":401707, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/CodeGame/Project2_backup/Project2/PuppuKnightProject_Runner/Adventure_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":4, "ts":1656690790184353, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1656690790184400, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":4, "ts":1656690790184401, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1656690790189833, "dur":2294, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1656690790224498, "dur": 884, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1656690790224331, "dur": 1085, "ph": "X", "name": "Write chrome-trace events", "args": {} },

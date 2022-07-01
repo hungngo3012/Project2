@@ -64,13 +64,20 @@ public class SubSceneChestManager : MonoBehaviour
             {
                 ChestManager.GetComponent<ChestManager>().isOpenSubChest2 = true;
             }
-            ChestManager.GetComponent<ChestManager>().SaveAllData();
+            //ChestManager.GetComponent<ChestManager>().SaveAllData();
+            StartCoroutine(Coroutine());
             isLoad = true;
         }
 
         if ((scene.buildIndex == 1) && isLoad)
         {
             Destroy(gameObject);
+        }
+
+        IEnumerator Coroutine()
+        {
+            yield return new WaitForSeconds(1);
+            ChestManager.GetComponent<ChestManager>().SaveAllData();
         }
 
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class CollectionManager : MonoBehaviour
 {
@@ -21,14 +22,22 @@ public class CollectionManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+
+        var go = GameObject.FindGameObjectsWithTag("CollectionManager");
+        if (go.Length > 1)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         Scene scene = SceneManager.GetActiveScene();
+
         MenuCollectionManager = GameObject.Find("MenuCollectionManager");
-        if(MenuCollectionManager != null)
+
+        if (MenuCollectionManager != null)
         {
             if(isCollectBlue)
             {
@@ -70,11 +79,6 @@ public class CollectionManager : MonoBehaviour
                 MenuCollectionManager.GetComponent<MenuCollectionManager>().isCollectLeon = true;
             }
 
-            Destroy(gameObject);
-        }
-
-        if((scene.buildIndex > 1))
-        {
             Destroy(gameObject);
         }
     }

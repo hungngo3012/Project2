@@ -18,7 +18,6 @@ public class ChestManager : MonoBehaviour
 
     public PlayerControl Player;
     public BossManager boss;
-
     // Start is called before the first frame update
     void Start()
     {

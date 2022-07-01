@@ -17,12 +17,18 @@ public class EnemyZone : MonoBehaviour
         {
             if(isGunner == 0)
             {
-                info.gameObject.GetComponent<EnemyAI_Simple>().ChangeDirection(true);
+                if (info.gameObject.GetComponent<EnemyAI_Simple>() != null)
+                {
+                    info.gameObject.GetComponent<EnemyAI_Simple>().ChangeDirection(true);
+                }
             }
             
             if(isGunner == 1)
             {
-                info.gameObject.GetComponent<EnemyAI_Gunner>().ChangeDirection(true);
+                if(info.gameObject.GetComponent<EnemyAI_Gunner>() != null)
+                {
+                    info.gameObject.GetComponent<EnemyAI_Gunner>().ChangeDirection(true);
+                }
             }           
         }
     }
