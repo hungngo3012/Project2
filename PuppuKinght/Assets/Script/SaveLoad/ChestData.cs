@@ -11,6 +11,7 @@ public class ChestData
     public int isOpenChest3;
 
     public int isOpenSubChest2;
+    public int isOpenSubChest3;
     // Start is called before the first frame update
     public ChestData(ChestManager chest)
     {
@@ -57,6 +58,15 @@ public class ChestData
         else
         {
             isOpenSubChest2 = 0;
+        }
+
+        if (chest.isOpenSubChest3)
+        {
+            isOpenSubChest3 = 1;
+        }
+        else
+        {
+            isOpenSubChest3 = 0;
         }
     }
 }

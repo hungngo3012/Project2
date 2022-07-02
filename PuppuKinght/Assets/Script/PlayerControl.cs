@@ -342,6 +342,11 @@ public class PlayerControl : MonoBehaviour
             stamina = stamina + 0.05f;           
         }
 
+        if(stamina > 100.0f)
+        {
+            stamina = 100.0f;
+        }
+
         if ((hp < 100) && !isPause)
         {
             hp = hp + 0.001f;

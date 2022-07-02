@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class SubSceneChestManager : MonoBehaviour
 {
     public bool isOpenSubChest2;
+    public bool isOpenSubChest3;
 
     public GameObject subChest2;
+    public GameObject subChest3;
 
     GameObject currentPlayer;
 
@@ -29,6 +31,16 @@ public class SubSceneChestManager : MonoBehaviour
                 subChest2.GetComponent<OpenEmptyChest>().isOpen = true;
             }
         }
+
+        if (data.isOpenSubChest3 == 1)
+        {
+            isOpenSubChest3 = true;
+            if (subChest3 != null)
+            {
+                Destroy(subChest3);
+            }
+        }
+
         DontDestroyOnLoad(gameObject);
     }
 
@@ -43,6 +55,11 @@ public class SubSceneChestManager : MonoBehaviour
             curSta = currentPlayer.GetComponent<PlayerControl>().stamina;
         }
         Scene scene = SceneManager.GetActiveScene();
+        if((scene.buildIndex == 3) && !isOpenSubChest3)
+        {
+            isOpenSubChest3 = true;
+        }
+
         if (!isOpenSubChest2)
         {
             if(subChest2 != null)
@@ -64,21 +81,27 @@ public class SubSceneChestManager : MonoBehaviour
             {
                 ChestManager.GetComponent<ChestManager>().isOpenSubChest2 = true;
             }
+
+            if (isOpenSubChest3)
+            {
+                ChestManager.GetComponent<ChestManager>().isOpenSubChest3 = true;
+            }
             //ChestManager.GetComponent<ChestManager>().SaveAllData();
-            StartCoroutine(Coroutine());
+            //StartCoroutine(Coroutine());
             isLoad = true;
         }
 
         if ((scene.buildIndex == 1) && isLoad)
         {
+            //ChestManager.GetComponent<ChestManager>().SaveAllData(); -> gay loi reset interact NPC nen thoi khong can
             Destroy(gameObject);
         }
 
+        /*
         IEnumerator Coroutine()
         {
             yield return new WaitForSeconds(1);
-            ChestManager.GetComponent<ChestManager>().SaveAllData();
-        }
+        }*/
 
     }
 }

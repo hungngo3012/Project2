@@ -10,6 +10,7 @@ public class ChestManager : MonoBehaviour
     public bool isOpenChest3;
 
     public bool isOpenSubChest2;
+    public bool isOpenSubChest3;
 
     public GameObject chest0;
     public GameObject chest1;
@@ -104,6 +105,15 @@ public class ChestManager : MonoBehaviour
         else
         {
             isOpenSubChest2 = false;
+        }
+
+        if (data.isOpenSubChest3 == 1)
+        {
+            isOpenSubChest3 = true;
+        }
+        else
+        {
+            isOpenSubChest3 = false;
         }
     }
 
