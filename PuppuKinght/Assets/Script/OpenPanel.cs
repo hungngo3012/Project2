@@ -7,7 +7,7 @@ public class OpenPanel : MonoBehaviour
     [SerializeField]
     Transform Panel;
 
-    bool canInt = true;
+    //bool canInt = true;
     // Start is called before the first frame update
     void Start()
     {

@@ -11,7 +11,7 @@ public class Shield : MonoBehaviour
 
     GameObject Enemy;
 
-    private bool isBlock = false;
+    //private bool isBlock = false;
     // Start is called before the first frame update
     void Start()
     {

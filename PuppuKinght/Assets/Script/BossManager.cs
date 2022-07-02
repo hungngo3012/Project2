@@ -9,6 +9,7 @@ public class BossManager : MonoBehaviour
     public bool isRockyDie;
     public bool isBepoDie;
 
+    public GameObject Player;
     public GameObject Gru;
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,7 @@ public class BossManager : MonoBehaviour
 
         if(isGruDie)
         {
+            Player.GetComponent<PlayerControl>().isCollectLife = true;
             Destroy(Gru);
         }
         //Debug.Log(isGruDie);

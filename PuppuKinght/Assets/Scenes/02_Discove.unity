@@ -519,6 +519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChestScene02_Top
       objectReference: {fileID: 0}
+    - target: {fileID: 2435364375264829908, guid: 07f9fbf665ac5474dbc0ac26d35d7c8c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5831134538185929430, guid: 07f9fbf665ac5474dbc0ac26d35d7c8c, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -573,6 +577,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5831134538185929430, guid: 07f9fbf665ac5474dbc0ac26d35d7c8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594967466462557317, guid: 07f9fbf665ac5474dbc0ac26d35d7c8c, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6604398403984369772, guid: 07f9fbf665ac5474dbc0ac26d35d7c8c, type: 3}
@@ -8712,7 +8720,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpenSubChest2: 0
+  isOpenSubChest3: 0
   subChest2: {fileID: 1899597939}
+  subChest3: {fileID: 0}
 --- !u!4 &388455465
 Transform:
   m_ObjectHideFlags: 0

@@ -48,7 +48,7 @@ public class GruAI : MonoBehaviour
     public float dis;
     public bool isDie;
     private bool isMove = false;
-    private bool isRest = false;
+    //private bool isRest = false;
     private int typeAttack;
     private int type;
     private bool isTalk = false;
@@ -99,14 +99,14 @@ public class GruAI : MonoBehaviour
 
         if (playerInSightRange && !playerInAttackRange && !isDie && !restAfterAttack && isTalk && !isKnock)
         {
-            isRest = false;
+            //isRest = false;
             //ani.SetTrigger("walk");
             ChasePlayer();
         }
 
         if (playerInSightRange && playerInAttackRange && !isDie && isTalk && !isKnock)
         {
-            isRest = false;
+            //isRest = false;
             //ani.ResetTrigger("walk");
             //ani.SetTrigger("attack");
             AttackPlayer();
