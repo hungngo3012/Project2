@@ -10,6 +10,7 @@ public class BackMainMap : MonoBehaviour
     [SerializeField]
     PlayerControl Player;
 
+    GameObject ChangeScreenEffect;
     bool canInt = false;
     // Start is called before the first frame update
     void Start()
@@ -39,9 +40,28 @@ public class BackMainMap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ChangeScreenEffect == null)
+        {
+            ChangeScreenEffect = GameObject.Find("ChangeScreen");
+        }
+
         if ((Input.GetKeyDown(KeyCode.E)) && canInt)
         {
-            SceneManager.LoadScene(1);
+            ChangeScreenEffect.SetActive(false);
+            ChangeScreenEffect.SetActive(true);
+            StartCoroutine(Coroutine());
         }
+    }
+    IEnumerator Coroutine()
+    {
+        //Print the time of when the function is first called.
+        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(1);
+
+        //After we have waited 5 seconds print the time again.
+        //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
     }
 }

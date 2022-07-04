@@ -30,7 +30,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject Chest;
 
-
+    public ChangeScene AnyChangeScene;
 
     void Start()
     {
@@ -99,7 +99,9 @@ public class PauseMenu : MonoBehaviour
     {
         SettingPanel.SetActive(false);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+
+        AnyChangeScene.ActiveChangeScreen();
+        StartCoroutine(Coroutine());
     }
 
     public void Save()
@@ -138,5 +140,17 @@ public class PauseMenu : MonoBehaviour
     public void Close(GameObject panel)
     {
         panel.SetActive(false);
+    }
+    IEnumerator Coroutine()
+    {
+        //Print the time of when the function is first called.
+        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(0);
+
+        //After we have waited 5 seconds print the time again.
+        //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
     }
 }

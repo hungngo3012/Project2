@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - Camera
     - ChangeCheckPoint
     - ChangeScene
+    - ChangeScreenEffect
     - ChestManager
     - ClosePanel
     - Collect
@@ -53,8 +54,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -980,6 +983,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1574}
     - Class: 114
@@ -1004,6 +1009,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7138}
     - Class: 114
       Script: {instanceID: 8402}
+    - Class: 114
+      Script: {instanceID: 44344}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1295,7 +1302,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: ada1c881061ff6aeaa31b1b21c8f6dd2
+      Hash: c4999abee33175a2dc4af7bffd30d525
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenu
@@ -1895,7 +1902,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: a87a55b77db4602fb5c63b889f3904c9
+      Hash: 28ab4a42304291231a26f4ea6368512a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ButtonManager
@@ -2163,6 +2170,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 771ea55d81151f6f884b3371d01562d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChangeScreenEffect
   platform: 19
   scenePathNames:
   - Assets/Scenes/0_MainMenu.unity

@@ -16,6 +16,7 @@ public class ChangeScene : MonoBehaviour
     [SerializeField]
     ChestManager ChestManager;
 
+    GameObject ChangeScreenEffect;
 
     public int NextSceneIndex;
     bool canInt = false;
@@ -47,13 +48,39 @@ public class ChangeScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ChangeScreenEffect == null)
+        {
+            ChangeScreenEffect = GameObject.Find("ChangeScreen");
+        }
+
         if ((Input.GetKeyDown(KeyCode.E)) && canInt)
         {
             Player.SavePlayer();
             BossManager.SaveBoss();
             ChestManager.SaveChest();
 
-            SceneManager.LoadScene(NextSceneIndex);
+            ChangeScreenEffect.SetActive(false);
+            ChangeScreenEffect.SetActive(true);
+            StartCoroutine(Coroutine());           
         }
+    }
+
+    public void ActiveChangeScreen()
+    {
+        ChangeScreenEffect.SetActive(false);
+        ChangeScreenEffect.SetActive(true);
+    }
+
+    IEnumerator Coroutine()
+    {
+        //Print the time of when the function is first called.
+        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(NextSceneIndex);
+
+        //After we have waited 5 seconds print the time again.
+        //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
     }
 }

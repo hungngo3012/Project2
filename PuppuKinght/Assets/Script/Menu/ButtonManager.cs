@@ -9,17 +9,32 @@ public class ButtonManager : MonoBehaviour
     public GameObject continueSystem;
     public MenuCollectionManager menuCollectionManager;
 
+    public GameObject ChangeScreen;
+
+    /*
+    void Update()
+    {
+        if (ChangeScreen == null)
+        {
+            ChangeScreen = GameObject.Find("ChangeScreenEffect");
+            Debug.Log("noo");
+        }
+    }
+    */
     public void NewGame()
     {
+        ChangeScreen.SetActive(false);
+        ChangeScreen.SetActive(true);
         menuCollectionManager.SaveCollection();
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(1);
+        StartCoroutine(Coroutine());
     }
 
     public void LoadGame()
     {
+        ChangeScreen.SetActive(false);
+        ChangeScreen.SetActive(true);
         menuCollectionManager.SaveCollection();
-        SceneManager.LoadScene(1);
+        StartCoroutine(Coroutine());
         continueSystem.GetComponent<ContinueSystem>().SetContinueClick(true);
     }
 
@@ -39,5 +54,19 @@ public class ButtonManager : MonoBehaviour
     {
         menuCollectionManager.SaveCollection();
         Application.Quit();
+    }
+
+    IEnumerator Coroutine()
+    {
+        //Print the time of when the function is first called.
+        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(1);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(1);
+
+        //After we have waited 5 seconds print the time again.
+        //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
     }
 }
