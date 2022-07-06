@@ -278,7 +278,7 @@ public class PlayerControl : MonoBehaviour
         {
             animator.SetBool("isMove", false);
         }
-
+        /*
         if (typeMove == 1)
         {
             Vector3 mouse = Input.mousePosition;
@@ -288,6 +288,12 @@ public class PlayerControl : MonoBehaviour
             toRotation.x = 0;
             toRotation.z = 0;
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * 0.15f *Time.deltaTime);
+        }
+        */
+        if (typeMove == 1)
+        {
+            Vector2 mouseInput = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")) * 5.0f;
+            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + mouseInput.x, transform.rotation.eulerAngles.z);
         }
 
         if ((Input.GetKeyDown(KeyCode.Space)) && (stamina > 20) && (movementDirection != Vector3.zero))
