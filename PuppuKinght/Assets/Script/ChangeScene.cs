@@ -67,8 +67,11 @@ public class ChangeScene : MonoBehaviour
 
     public void ActiveChangeScreen()
     {
-        ChangeScreenEffect.SetActive(false);
-        ChangeScreenEffect.SetActive(true);
+        if(ChangeScreenEffect != null)
+        {
+            ChangeScreenEffect.SetActive(false);
+            ChangeScreenEffect.SetActive(true);
+        }
     }
 
     IEnumerator Coroutine()
