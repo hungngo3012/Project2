@@ -178,7 +178,7 @@ public class PlayerControl : MonoBehaviour
             isDie = false;
         }
 
-        if ((Input.GetKeyDown(KeyCode.J)) && (stamina > 5) && !isAttackTrigger && isCollectSword && !isDef && !isKnockStrong)
+        if ((Input.GetKeyDown(KeyCode.J)) && (stamina > 5) && !isAttackTrigger && isCollectSword && !isDef && !isKnockStrong && !isDieTrigger)
         {
             weaponJ.UnActive();
             weaponK.UnActive();
@@ -196,7 +196,7 @@ public class PlayerControl : MonoBehaviour
             animator.SetBool("attack1", false);
         }
 
-        if ((Input.GetKeyDown(KeyCode.K)) && (stamina > 10) && !isAttackTrigger && isCollectSword && !isDef && !isKnockStrong)
+        if ((Input.GetKeyDown(KeyCode.K)) && (stamina > 10) && !isAttackTrigger && isCollectSword && !isDef && !isKnockStrong && !isDieTrigger)
         {
             weaponK.UnActive();
             weaponJ.UnActive();
@@ -306,7 +306,7 @@ public class PlayerControl : MonoBehaviour
             //staminaBar.SetHealth(stamina);
         }
 
-        if ((Input.GetKey(KeyCode.L)) && isCollectShield)
+        if ((Input.GetKey(KeyCode.L)) && isCollectShield && !isDieTrigger)
         {
             weaponJ.UnActive();
             weaponK.UnActive();
@@ -324,7 +324,7 @@ public class PlayerControl : MonoBehaviour
             isDef = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.H) && (stamina > 50) && !isDef && isCollectBomb)
+        if (Input.GetKeyDown(KeyCode.H) && (stamina > 50) && !isDef && isCollectBomb && !isDieTrigger)
         {
             Bullet.position = BulletPos.position;
             bulMesh.enabled = true;

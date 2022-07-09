@@ -7,12 +7,15 @@ public class ProtectPanel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Coroutine());
+        
     }
 
     void Update()
     {
-
+        if(transform.gameObject.activeSelf)
+        {
+            StartCoroutine(Coroutine());
+        }
     }
     // Update is called once per frame
     IEnumerator Coroutine()

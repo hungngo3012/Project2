@@ -55,8 +55,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -596,29 +598,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6532}
     - Class: 114
-      Script: {instanceID: 6736}
+      Script: {instanceID: 6738}
     - Class: 114
-      Script: {instanceID: 6746}
+      Script: {instanceID: 6748}
     - Class: 114
-      Script: {instanceID: 7102}
+      Script: {instanceID: 7104}
     - Class: 114
-      Script: {instanceID: 7140}
+      Script: {instanceID: 7142}
     - Class: 114
-      Script: {instanceID: 7238}
+      Script: {instanceID: 7240}
     - Class: 114
-      Script: {instanceID: 7454}
+      Script: {instanceID: 7456}
     - Class: 114
-      Script: {instanceID: 7764}
+      Script: {instanceID: 7766}
     - Class: 114
-      Script: {instanceID: 7776}
+      Script: {instanceID: 7778}
     - Class: 114
-      Script: {instanceID: 7918}
+      Script: {instanceID: 7920}
     - Class: 114
-      Script: {instanceID: 8014}
+      Script: {instanceID: 8016}
     - Class: 114
-      Script: {instanceID: 8806}
+      Script: {instanceID: 8808}
     - Class: 114
-      Script: {instanceID: 8858}
+      Script: {instanceID: 8860}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -757,17 +759,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6532}
     - Class: 114
-      Script: {instanceID: 6736}
+      Script: {instanceID: 6738}
     - Class: 114
-      Script: {instanceID: 6746}
+      Script: {instanceID: 6748}
     - Class: 114
-      Script: {instanceID: 6864}
+      Script: {instanceID: 6866}
     - Class: 114
-      Script: {instanceID: 7140}
+      Script: {instanceID: 7142}
     - Class: 114
-      Script: {instanceID: 7238}
+      Script: {instanceID: 7240}
     - Class: 114
-      Script: {instanceID: 8014}
+      Script: {instanceID: 8016}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -902,17 +904,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6532}
     - Class: 114
-      Script: {instanceID: 6736}
+      Script: {instanceID: 6738}
     - Class: 114
-      Script: {instanceID: 6746}
+      Script: {instanceID: 6748}
     - Class: 114
-      Script: {instanceID: 6864}
+      Script: {instanceID: 6866}
     - Class: 114
-      Script: {instanceID: 7140}
+      Script: {instanceID: 7142}
     - Class: 114
-      Script: {instanceID: 7238}
+      Script: {instanceID: 7240}
     - Class: 114
-      Script: {instanceID: 8014}
+      Script: {instanceID: 8016}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1001,17 +1003,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6196}
     - Class: 114
-      Script: {instanceID: 6736}
+      Script: {instanceID: 6600}
     - Class: 114
-      Script: {instanceID: 6780}
+      Script: {instanceID: 6738}
     - Class: 114
-      Script: {instanceID: 7064}
+      Script: {instanceID: 6782}
     - Class: 114
-      Script: {instanceID: 7140}
+      Script: {instanceID: 7066}
     - Class: 114
-      Script: {instanceID: 8404}
+      Script: {instanceID: 7142}
     - Class: 114
-      Script: {instanceID: 214218}
+      Script: {instanceID: 8406}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1879,6 +1881,12 @@ ScriptsOnlyBuild:
     className: Entity
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProtectPanel
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -2177,12 +2185,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ProtectPanel
   platform: 19
   scenePathNames:
   - Assets/Scenes/0_MainMenu.unity
